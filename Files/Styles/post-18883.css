@@ -1,0 +1,361 @@
+.elementor-18883 .elementor-element.elementor-element-4d95f85>.elementor-container>.elementor-row>.elementor-column>.elementor-column-wrap>.elementor-widget-wrap {
+    align-content: center;
+    align-items: center;
+}
+
+.elementor-18883 .elementor-element.elementor-element-4d95f85:not(.elementor-motion-effects-element-type-background),
+.elementor-18883 .elementor-element.elementor-element-4d95f85>.elementor-motion-effects-container>.elementor-motion-effects-layer {
+    background-color: #19002a8c;
+}
+
+.elementor-18883 .elementor-element.elementor-element-4d95f85 {
+    transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+    padding: 30px 0px 30px 0px;
+}
+
+.elementor-18883 .elementor-element.elementor-element-4d95f85>.elementor-background-overlay {
+    transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+}
+
+.elementor-18883 .elementor-element.elementor-element-0a8f2ff {
+    text-align: left;
+}
+
+.elementor-18883 .elementor-element.elementor-element-0a8f2ff img {
+    width: 100%;
+    max-width: 200px;
+}
+
+.elementor-18883 .elementor-element.elementor-element-dc20fbf .eael-simple-menu-container {
+    background-color: #02010100;
+}
+
+.elementor-18883 .elementor-element.elementor-element-dc20fbf .eael-simple-menu-container .eael-simple-menu.eael-simple-menu-horizontal {
+    background-color: #02010100;
+}
+
+.elementor-18883 .elementor-element.elementor-element-dc20fbf .eael-simple-menu li a {
+    padding: 0px 25px 0px 25px;
+}
+
+.elementor-18883 .elementor-element.elementor-element-dc20fbf .eael-simple-menu>li>a,
+.eael-simple-menu-container .eael-simple-menu-toggle-text {
+    font-family: "Exo", Sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+    line-height: 1.5em;
+}
+
+.elementor-18883 .elementor-element.elementor-element-dc20fbf .eael-simple-menu li>a {
+    color: #B154F0;
+    background-color: #4E4A4A00;
+}
+
+.elementor-18883 .elementor-element.elementor-element-dc20fbf .eael-simple-menu li>a>span svg {
+    fill: #B154F0;
+}
+
+.elementor-18883 .elementor-element.elementor-element-dc20fbf .eael-simple-menu-toggle-text {
+    color: #B154F0;
+}
+
+.elementor-18883 .elementor-element.elementor-element-dc20fbf .eael-simple-menu li a span,
+.elementor-18883 .elementor-element.elementor-element-dc20fbf .eael-simple-menu li span.eael-simple-menu-indicator {
+    font-size: 15px;
+}
+
+.elementor-18883 .elementor-element.elementor-element-dc20fbf .eael-simple-menu li span.eael-simple-menu-indicator svg,
+.elementor-18883 .elementor-element.elementor-element-dc20fbf .indicator-svg svg {
+    width: 15px;
+}
+
+.elementor-18883 .elementor-element.elementor-element-dc20fbf .eael-simple-menu li .eael-simple-menu-indicator:before {
+    color: #B154F0;
+}
+
+.elementor-18883 .elementor-element.elementor-element-dc20fbf .eael-simple-menu li .eael-simple-menu-indicator {
+    background-color: #ffffff;
+    border-color: #B154F0;
+}
+
+.elementor-18883 .elementor-element.elementor-element-dc20fbf .eael-simple-menu li:hover>a {
+    color: #FFFFFF;
+    background-color: #02010100;
+}
+
+.elementor-18883 .elementor-element.elementor-element-dc20fbf .eael-simple-menu li:hover>a>span svg {
+    fill: #FFFFFF;
+}
+
+.elementor-18883 .elementor-element.elementor-element-dc20fbf .eael-simple-menu li.current-menu-item>a {
+    color: #FFFFFF;
+    background-color: #02010100;
+}
+
+.elementor-18883 .elementor-element.elementor-element-dc20fbf .eael-simple-menu li.current-menu-ancestor>a {
+    color: #FFFFFF;
+    background-color: #02010100;
+}
+
+.elementor-18883 .elementor-element.elementor-element-dc20fbf .eael-simple-menu li .eael-simple-menu-indicator:hover:before {
+    color: #B154F0;
+}
+
+.elementor-18883 .elementor-element.elementor-element-dc20fbf .eael-simple-menu li .eael-simple-menu-indicator.eael-simple-menu-indicator-open:before {
+    color: #B154F0;
+}
+
+.elementor-18883 .elementor-element.elementor-element-dc20fbf .eael-simple-menu li .eael-simple-menu-indicator:hover {
+    background-color: #ffffff;
+    border-color: #B154F0;
+}
+
+.elementor-18883 .elementor-element.elementor-element-dc20fbf .eael-simple-menu li .eael-simple-menu-indicator.eael-simple-menu-indicator-open {
+    background-color: #ffffff;
+    border-color: #B154F0;
+}
+
+.elementor-18883 .elementor-element.elementor-element-dc20fbf .eael-simple-menu-container .eael-simple-menu-toggle {
+    background-color: #B154F0;
+}
+
+.elementor-18883 .elementor-element.elementor-element-dc20fbf .eael-simple-menu-container .eael-simple-menu-toggle i {
+    font-size: 26px;
+    color: #ffffff;
+}
+
+.elementor-18883 .elementor-element.elementor-element-dc20fbf .eael-simple-menu-container .eael-simple-menu-toggle svg {
+    width: 26px;
+    fill: #ffffff;
+}
+
+.elementor-18883 .elementor-element.elementor-element-dc20fbf .eael-simple-menu.eael-simple-menu-responsive li>a {
+    color: #FFFFFF;
+    background-color: #B154F0;
+}
+
+.elementor-18883 .elementor-element.elementor-element-dc20fbf .eael-simple-menu.eael-simple-menu-responsive li>a>span svg {
+    fill: #FFFFFF;
+}
+
+.elementor-18883 .elementor-element.elementor-element-dc20fbf .eael-simple-menu.eael-simple-menu-responsive li:hover>a {
+    color: #B154F0;
+    background-color: #FFFFFF;
+}
+
+.elementor-18883 .elementor-element.elementor-element-dc20fbf .eael-simple-menu.eael-simple-menu-responsive li:hover>a>span svg {
+    fill: #B154F0;
+}
+
+.elementor-18883 .elementor-element.elementor-element-dc20fbf .eael-simple-menu.eael-simple-menu-responsive li.current-menu-item>a {
+    color: #B154F0;
+    background-color: #FFFFFF;
+}
+
+.elementor-18883 .elementor-element.elementor-element-dc20fbf .eael-simple-menu.eael-simple-menu-responsive li.current-menu-item>a>span svg {
+    fill: #B154F0;
+}
+
+.elementor-18883 .elementor-element.elementor-element-dc20fbf .eael-simple-menu.eael-simple-menu-responsive .eael-simple-menu-indicator {
+    top: 8px;
+}
+
+.elementor-18883 .elementor-element.elementor-element-dc20fbf .eael-simple-menu.eael-simple-menu-horizontal li ul li a {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.elementor-18883 .elementor-element.elementor-element-dc20fbf .eael-simple-menu.eael-simple-menu-horizontal li ul li>a {
+    border-bottom: 1px solid #F2F2F200;
+}
+
+.elementor-18883 .elementor-element.elementor-element-dc20fbf .eael-simple-menu.eael-simple-menu-vertical li ul li>a {
+    border-bottom: 1px solid #F2F2F200;
+}
+
+.elementor-18883 .elementor-element.elementor-element-dc20fbf .eael-simple-menu li ul li>a {
+    font-family: "Exo", Sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    text-transform: uppercase;
+    line-height: 2.7em;
+    color: #FFFFFF;
+    background-color: #B154F0;
+}
+
+.elementor-18883 .elementor-element.elementor-element-dc20fbf .eael-simple-menu li ul li a span,
+.elementor-18883 .elementor-element.elementor-element-dc20fbf .eael-simple-menu li ul li span.eael-simple-menu-indicator {
+    font-size: 12px;
+}
+
+.elementor-18883 .elementor-element.elementor-element-dc20fbf .eael-simple-menu li ul li .eael-simple-menu-indicator svg,
+.elementor-18883 .elementor-element.elementor-element-dc20fbf .eael-simple-menu li ul li a .indicator-svg svg {
+    width: 12px;
+}
+
+.elementor-18883 .elementor-element.elementor-element-dc20fbf .eael-simple-menu li ul li .eael-simple-menu-indicator:before {
+    color: #f44336;
+}
+
+.elementor-18883 .elementor-element.elementor-element-dc20fbf .eael-simple-menu li ul li .eael-simple-menu-indicator {
+    background-color: #ffffff;
+    border-color: #f44336;
+}
+
+.elementor-18883 .elementor-element.elementor-element-dc20fbf .eael-simple-menu li ul li:hover>a {
+    color: #B154F0;
+    background-color: #FFFFFF;
+}
+
+.elementor-18883 .elementor-element.elementor-element-dc20fbf .eael-simple-menu li ul li.current-menu-item>a {
+    color: #B154F0;
+    background-color: #FFFFFF;
+}
+
+.elementor-18883 .elementor-element.elementor-element-dc20fbf .eael-simple-menu li ul li.current-menu-ancestor>a {
+    color: #B154F0;
+    background-color: #FFFFFF;
+}
+
+.elementor-18883 .elementor-element.elementor-element-dc20fbf .eael-simple-menu li ul li .eael-simple-menu-indicator:hover:before {
+    color: #f44336;
+}
+
+.elementor-18883 .elementor-element.elementor-element-dc20fbf .eael-simple-menu li ul li .eael-simple-menu-indicator.eael-simple-menu-indicator-open:before {
+    color: #f44336;
+}
+
+.elementor-18883 .elementor-element.elementor-element-dc20fbf .eael-simple-menu li ul li .eael-simple-menu-indicator:hover {
+    background-color: #ffffff;
+    border-color: #f44336;
+}
+
+.elementor-18883 .elementor-element.elementor-element-dc20fbf .eael-simple-menu li ul li .eael-simple-menu-indicator.eael-simple-menu-indicator-open {
+    background-color: #ffffff;
+    border-color: #f44336;
+}
+
+.elementor-18883 .elementor-element.elementor-element-c8711b4.elementor-column>.elementor-column-wrap>.elementor-widget-wrap {
+    justify-content: flex-end;
+}
+
+.elementor-18883 .elementor-element.elementor-element-65b222e .elementor-button {
+    font-family: "Exo", Sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 1.2em;
+    letter-spacing: 0.1px;
+    fill: #FFFFFF;
+    color: #FFFFFF;
+    background-color: #371152;
+    border-radius: 0px 0px 0px 0px;
+    padding: 17px 40px 17px 40px;
+}
+
+.elementor-18883 .elementor-element.elementor-element-65b222e .elementor-button:hover,
+.elementor-18883 .elementor-element.elementor-element-65b222e .elementor-button:focus {
+    background-color: rgba(55, 17, 82, 0);
+}
+
+.elementor-18883 .elementor-element.elementor-element-65b222e>.elementor-widget-container {
+    margin: 0px 10px 0px 0px;
+    padding: 2px 2px 2px 2px;
+    background-color: transparent;
+    background-image: linear-gradient(90deg, #FF71AC 0%, #3A75E9 100%);
+}
+
+.elementor-18883 .elementor-element.elementor-element-65b222e {
+    width: auto;
+    max-width: auto;
+}
+
+@media(min-width:768px) {
+    .elementor-18883 .elementor-element.elementor-element-bf78d1b {
+        width: 20%;
+    }
+
+    .elementor-18883 .elementor-element.elementor-element-b28b760 {
+        width: 62.332%;
+    }
+
+    .elementor-18883 .elementor-element.elementor-element-c8711b4 {
+        width: 17%;
+    }
+}
+
+@media(max-width:1024px) and (min-width:768px) {
+    .elementor-18883 .elementor-element.elementor-element-bf78d1b {
+        width: 100%;
+    }
+
+    .elementor-18883 .elementor-element.elementor-element-b28b760 {
+        width: 50%;
+    }
+
+    .elementor-18883 .elementor-element.elementor-element-c8711b4 {
+        width: 50%;
+    }
+}
+
+@media(max-width:1024px) {
+    .elementor-18883 .elementor-element.elementor-element-4d95f85 {
+        padding: 20px 20px 20px 20px;
+    }
+
+    .elementor-18883 .elementor-element.elementor-element-bf78d1b>.elementor-element-populated>.elementor-widget-wrap {
+        padding: 0px 0px 20px 0px;
+    }
+
+    .elementor-18883 .elementor-element.elementor-element-0a8f2ff {
+        text-align: center;
+    }
+
+    .elementor-18883 .elementor-element.elementor-element-dc20fbf .eael-simple-menu li a {
+        padding: 10px 20px 10px 20px;
+    }
+
+    .elementor-18883 .elementor-element.elementor-element-dc20fbf .eael-simple-menu-container.eael-simple-menu-hamburger {
+        min-height: 42px;
+    }
+
+    .elementor-18883 .elementor-element.elementor-element-dc20fbf .eael-simple-menu-container .eael-simple-menu-toggle {
+        padding: 5px 10px 5px 10px;
+    }
+
+    .elementor-18883 .elementor-element.elementor-element-dc20fbf .eael-simple-menu.eael-simple-menu-horizontal li ul li a {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    .elementor-18883 .elementor-element.elementor-element-dc20fbf .eael-simple-menu li ul li>a {
+        line-height: 1.3em;
+    }
+
+    .elementor-18883 .elementor-element.elementor-element-65b222e .elementor-button {
+        font-size: 14px;
+        padding: 13px 30px 13px 30px;
+    }
+}
+
+@media(max-width:767px) {
+    .elementor-18883 .elementor-element.elementor-element-b28b760 {
+        width: 50%;
+    }
+
+    .elementor-18883 .elementor-element.elementor-element-c8711b4 {
+        width: 50%;
+    }
+}
+
+/* Start custom CSS for button, class: .elementor-element-65b222e */
+.skew-button .elementor-widget-container {
+    transform: skewX(-15deg) !important;
+}
+
+.skew-button .elementor-widget-container .elementor-button-text {
+    transform: skewX(15deg);
+}
+
+/* End custom CSS */
