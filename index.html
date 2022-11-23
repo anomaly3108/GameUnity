@@ -1,0 +1,2087 @@
+<!DOCTYPE html>
+<html lang="null">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<title>My Game</title>
+		<link rel="stylesheet" id="elementor-frontend-legacy-css"
+			href="Files/Styles/frontend-legacy.min.css" type="text/css" media="all">
+		<link rel="stylesheet" id="elementor-frontend-css"
+			href="Files/Styles/frontend.min.css" type="text/css" media="all">
+		<link rel="stylesheet" id="eael-general-css" href="Files/Styles/general.min.css"
+			type="text/css" media="all">
+		<link data-minify="1" rel="stylesheet" id="eael-18883-css"
+			href="Files/Styles/eael-18883.css" type="text/css" media="all">
+		<link data-minify="1" rel="stylesheet" id="eael-18886-css"
+			href="Files/Styles/eael-18886.css" type="text/css" media="all">
+		<link rel="stylesheet" id="wp-block-library-css" href="Files/Styles/style.min.css"
+			type="text/css" media="all">
+		<link data-minify="1" rel="stylesheet" id="wc-blocks-vendors-style-css"
+			href="Files/Styles/wc-blocks-vendors-style.css" type="text/css" media="all">
+		<link data-minify="1" rel="stylesheet" id="wc-blocks-style-css"
+			href="Files/Styles/wc-blocks-style.css" type="text/css" media="all">
+		<link rel="stylesheet" id="classic-theme-styles-css"
+			href="Files/Styles/classic-themes.min.css" type="text/css" media="all">
+		<style id="global-styles-inline-css" type="text/css">
+			body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--duotone--dark-grayscale: url('#wp-duotone-dark-grayscale');--wp--preset--duotone--grayscale: url('#wp-duotone-grayscale');--wp--preset--duotone--purple-yellow: url('#wp-duotone-purple-yellow');--wp--preset--duotone--blue-red: url('#wp-duotone-blue-red');--wp--preset--duotone--midnight: url('#wp-duotone-midnight');--wp--preset--duotone--magenta-yellow: url('#wp-duotone-magenta-yellow');--wp--preset--duotone--purple-green: url('#wp-duotone-purple-green');--wp--preset--duotone--blue-orange: url('#wp-duotone-blue-orange');--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;}:where(.is-layout-flex){gap: 0.5em;}body .is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}body .is-layout-flex{flex-wrap: wrap;align-items: center;}body .is-layout-flex > *{margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+			.wp-block-navigation a:where(:not(.wp-element-button)){color: inherit;}
+			:where(.wp-block-columns.is-layout-flex){gap: 2em;}
+			.wp-block-pullquote{font-size: 1.5em;line-height: 1.6;}
+		</style>
+		<link data-minify="1" rel="stylesheet" id="contact-form-7-css"
+			href="Files/Styles/styles.css" type="text/css" media="all">
+		<link rel="stylesheet" id="crowdfundly-bootstrap-css"
+			href="Files/Styles/bootstrap.min.css" type="text/css" media="all">
+		<link data-minify="1" rel="stylesheet" id="crowdfundly-fontawesome-css"
+			href="Files/Styles/all.css" type="text/css" media="all">
+		<link data-minify="1" rel="stylesheet" id="crowdfundly-slick-css"
+			href="Files/Styles/slick.css" type="text/css" media="all">
+		<link data-minify="1" rel="stylesheet" id="crowdfundly-slick-theme-css"
+			href="Files/Styles/slick-theme.css" type="text/css" media="all">
+		<link rel="stylesheet" id="crowdfundly-select2-css"
+			href="Files/Styles/select2.min.css" type="text/css" media="all">
+		<link data-minify="1" rel="stylesheet" id="crowdfundly-public-css-css"
+			href="Files/Styles/crowdfundly-public.css" type="text/css" media="all">
+		<link rel="stylesheet" id="easyjobsowl-css" href="Files/Styles/owl.carousel.min.css"
+			type="text/css" media="all">
+		<link data-minify="1" rel="stylesheet" id="easyjobs-css"
+			href="Files/Styles/easyjobs-public.min.css" type="text/css" media="all">
+		<link rel="stylesheet" id="learndash_quiz_front_css-css"
+			href="Files/Styles/learndash_quiz_front.min.css" type="text/css" media="all">
+		<link rel="stylesheet" id="learndash_style-css" href="Files/Styles/style.min(1).css"
+			type="text/css" media="all">
+		<link rel="stylesheet" id="sfwd_front_css-css" href="Files/Styles/front.min.css"
+			type="text/css" media="all">
+		<link rel="stylesheet" id="jquery-dropdown-css-css"
+			href="Files/Styles/jquery.dropdown.min.css" type="text/css" media="all">
+		<link rel="stylesheet" id="learndash_pager_css-css"
+			href="Files/Styles/learndash_pager.min.css" type="text/css" media="all">
+		<link rel="stylesheet" id="learndash_template_style_css-css"
+			href="Files/Styles/learndash_template_style.min.css" type="text/css" media="all">
+		<link rel="stylesheet" id="learndash_lesson_video-css"
+			href="Files/Styles/learndash_lesson_video.min.css" type="text/css" media="all">
+		<link data-minify="1" rel="stylesheet" id="woocommerce-layout-css"
+			href="Files/Styles/woocommerce-layout.css" type="text/css" media="all">
+		<link data-minify="1" rel="stylesheet" id="woocommerce-smallscreen-css"
+			href="Files/Styles/woocommerce-smallscreen.css" type="text/css" media="only screen
+			and (max-width: 768px)">
+		<link data-minify="1" rel="stylesheet" id="woocommerce-general-css"
+			href="Files/Styles/woocommerce.css" type="text/css" media="all">
+		<style id="woocommerce-inline-inline-css" type="text/css">
+.woocommerce form .form-row .required { visibility: visible; }
+</style>
+		<link data-minify="1" rel="stylesheet" id="flexia-theme-style-css"
+			href="Files/Styles/style.css" type="text/css" media="all">
+
+		<link data-minify="1" rel="stylesheet" id="eael-18800-css"
+			href="Files/Styles/eael-18800.css" type="text/css" media="all">
+		<link data-minify="1" rel="stylesheet" id="elementor-icons-css"
+			href="Files/Styles/elementor-icons.min.css" type="text/css" media="all">
+		<link rel="stylesheet" id="elementor-post-119-css" href="Files/Styles/post-119.css"
+			type="text/css" media="all">
+		<link rel="stylesheet" id="elementor-pro-css" href="Files/Styles/frontend.min(1).css"
+			type="text/css" media="all">
+		<link rel="stylesheet" id="elementor-global-css" href="Files/Styles/global.css"
+			type="text/css" media="all">
+		<link rel="stylesheet" id="elementor-post-18800-css"
+			href="Files/Styles/post-18800.css" type="text/css" media="all">
+		<link data-minify="1" rel="stylesheet" id="fluentform-elementor-widget-css"
+			href="Files/Styles/fluent-forms-elementor-widget.css" type="text/css" media="all">
+		<link rel="stylesheet" id="elementor-post-18883-css"
+			href="Files/Styles/post-18883.css" type="text/css" media="all">
+		<link rel="stylesheet" id="elementor-post-18886-css"
+			href="Files/Styles/post-18886.css" type="text/css" media="all">
+
+		<link rel="stylesheet" id="elementor-icons-shared-0-css"
+			href="Files/Styles/fontawesome.min.css" type="text/css" media="all">
+		<link data-minify="1" rel="stylesheet" id="elementor-icons-fa-solid-css"
+			href="Files/Styles/solid.min.css" type="text/css" media="all">
+		<link data-minify="1" rel="stylesheet" id="elementor-icons-fa-brands-css"
+			href="Files/Styles/brands.min.css" type="text/css" media="all">
+		<script type="text/javascript" src="Files/Scripts/jquery.min.js.download"
+			id="jquery-core-js"></script>
+		<script type="text/javascript" src="Files/Scripts/jquery-migrate.min.js.download"
+			id="jquery-migrate-js" defer=""></script>
+
+		<!-- Google Analytics snippet added by Site Kit -->
+		<script type="text/javascript" src="Files/Scripts/js" id="google_gtagjs-js" async=""></script>
+		<script type="text/javascript" id="google_gtagjs-js-after">
+window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}
+gtag('set', 'linker', {"domains":["live.templately.com"]} );
+gtag("js", new Date());
+gtag("set", "developer_id.dZTNiMT", true);
+gtag("config", "UA-143402962-6", {"anonymize_ip":true});
+</script>
+
+		<!-- End Google Analytics snippet added by Site Kit -->
+		<link rel="https://api.w.org/" href="https://live.templately.com/wp-json/"><link
+			rel="alternate" type="application/json"
+			href="https://live.templately.com/wp-json/wp/v2/pages/18800"><link
+			rel="EditURI" type="application/rsd+xml" title="RSD"
+			href="https://live.templately.com/xmlrpc.php?rsd">
+		<link rel="wlwmanifest" type="application/wlwmanifest+xml"
+			href="https://live.templately.com/wp-includes/wlwmanifest.xml">
+		<meta name="generator" content="WordPress 6.1.1">
+		<meta name="generator" content="WooCommerce 7.1.0">
+		<link rel="canonical" href="https://live.templately.com/gamezone/">
+		<link rel="shortlink" href="https://live.templately.com/?p=18800">
+		<link rel="alternate" type="application/json+oembed"
+			href="https://live.templately.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Flive.templately.com%2Fgamezone%2F">
+		<link rel="alternate" type="text/xml+oembed"
+			href="https://live.templately.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Flive.templately.com%2Fgamezone%2F&amp;format=xml">
+		<style type="text/css">
+		/* === organization === */
+		.crowdfundy-org .content-body {
+			background-color: ;
+		}
+
+		.crowdfundy-org .organization__details {
+			background-color: ;
+		}
+
+		.organization__info .organization__info-name {
+			color: ;
+		}
+
+		.organization__info .organization__info-address {
+			color: ;
+		}
+
+		.organization__social .organization__social-title {
+			color: ;
+		}
+		
+		.organization__social-item .organization__social-item-title {
+			color: ;
+		}
+
+		.organization__social-item .organization__social-item-subtitle {
+			color: ;
+		}
+
+		.template h4.organization__details-title {
+			color: ;
+			font-size: 20pxpx;
+			text-transform: ;
+		}
+
+		.organization__details-description p > span {
+			color:  !important;
+		}
+
+		.organization__slider .slick-track .slick-slide img {
+			height: px;
+		}
+
+		.organization__info-logo,
+		.organization__info-logo .organization__info-logo-img {
+			width: px;
+			height: px;
+		}
+
+		.template .organization__social-item-icon {
+			font-size: px;
+		}
+
+		.organization__campaigns .organization__campaigns-title {
+			font-size: px;
+			color: ;
+			text-transform: ;
+		}
+
+		.organization__campaigns .campaign-card {
+			background-color: ;
+		}
+
+		.organization__campaigns .campaign-card:hover {
+			background-color: ;
+		}
+
+		.organization__campaigns .campaign-card__top {
+			background-color: ;
+		}
+
+		.organization__campaigns .campaign-card__title {
+			color: ;
+			font-size: px;
+		}
+
+		.organization__campaigns .campaign-card__description {
+			color: ;
+			font-size: px;			
+		}
+
+		.organization__campaigns .progress--slim {
+			background-color: ;
+		}
+
+		.organization__campaigns .progress__bar {
+			background-color: ;
+		}
+
+		.organization__campaigns .campaign-card__amount {
+			color: ;
+			font-size: px;			
+		}
+		.organization__campaigns .campaign-card__amount strong {
+			color: ;
+			font-size: px;			
+		}
+
+		.organization-all-camp-btn {
+			background-color: ;
+			color: ;
+			border-color: ;
+			border-top-left-radius: px;
+			border-top-right-radius: px;
+			border-bottom-right-radius: px;
+			border-bottom-left-radius: px;
+			padding: px;
+		}
+
+		.organization-all-camp-btn:hover {
+			background-color: ;
+			color: ;
+			border-color: ;
+		}
+
+		/* === all campaigns === */
+		.all-camps .content-body {
+			background-color: ;
+		}
+
+		.all-campaign__filter-search-icon {
+			color: ;
+		}
+
+		.all-campaign__filter-search .all-campaign__filter-search-input {
+			border-color: ;
+		}
+
+		.all-campaign__filter-search .all-campaign__filter-search-input::-webkit-input-placeholder {
+			color: ;
+		}
+		.all-campaign__filter-search .all-campaign__filter-search-input::-moz-placeholder {
+			color: ;
+		}
+		.all-campaign__filter-search .all-campaign__filter-search-input::-ms-input-placeholder {
+			color: ;
+		}
+
+		.all-campaign .all-campaign__title {
+			font-size: px;
+			color: ;
+		}
+
+		.organization__details-description p {
+			font-size: px;
+		}
+
+		.all-campaign__filter {
+			background-color: ;
+		}
+
+		#allCampaignSearch {
+			color: ;
+			background-color: ;
+			border-color: ;
+			font-size: px;
+			
+		}
+
+		#allCampaignSearch:hover {
+			color: ;
+			background-color: ;
+			border-color: ;
+		}
+
+		.all-campaign .campaign-card {
+			background-color: ;
+		}
+
+		.all-campaign .campaign-card:hover {
+			background-color: ;
+		}
+
+		.all-campaign .campaign-card__img {
+			width: px;
+		}
+
+		.all-campaign .campaign-card__title {
+			color: ;
+			font-size: px;
+		}
+
+		.all-campaign .campaign-card__description {
+			color: ;
+			font-size: px;			
+		}
+
+		.all-campaign .progress--slim {
+			background-color: ;
+		}
+
+		.all-campaign .progress__bar--secondary {
+			background-color: ;
+		}
+
+		.all-campaign .campaign-card__amount {
+			color: ;
+			font-size: px;						
+		}
+		.all-campaign .campaign-card__amount strong {
+			color: ;
+			font-size: px;
+		}
+
+		#crowdfundly-all-camp-loadmore {
+			background-color: ;
+			color: ;
+			border-color: ;
+		}
+		#crowdfundly-all-camp-loadmore:hover {
+			background-color: ;
+			color: ;
+			border-color: ;
+		}
+
+		/* === single campaign === */
+		.crowdfundly-single-camp .content-body {
+			background-color: ;
+		}
+
+		.gallery-slider .slick-current.slick-active,
+		.campaign__view .thumbnails .slide iframe,
+		.campaign__view .thumbnails .slide img {
+			background-color: ;
+		}
+
+		.campaign__view-slider .slick-active .slide__inner {
+			background-color: ;
+		}
+
+		.gallery-slider-nav .slick-prev:before,
+		.gallery-slider-nav .slick-next:before {
+			color: ;
+		}
+
+		.campaign__title.campaign__title--status {
+			color: ;
+			font-size: px;
+			text-transform: ;
+		}
+
+		.campaign__status-title {
+			color: ;
+		}
+
+		.campaign__fundraiser-name {
+			font-size: px;
+			color: ;
+		}
+
+		.campaign__fundraiser-name .campaign__fundraiser-name-link {
+			color: ;
+			font-size: px;			
+		}
+
+		.campaign__funding .funding-goal {
+			background-color: ;
+		}
+
+		.funding-goal .funding-card__value,
+		.funding-goal .funding-card__lavel {
+			color: ;
+		}
+
+		.campaign__funding .fund-raised {
+			background-color: ;
+		}
+
+		.fund-raised .funding-card__value,
+		.fund-raised .funding-card__lavel {
+			color: ;
+		}
+
+		.campaign__funding .funding-duration {
+			background-color: ;
+		}
+
+		.funding-duration .funding-card__value,
+		.funding-duration .funding-card__lavel {
+			color: ;
+		}
+
+		.campaign__details .progress.progress--sm {
+			background-color: ;
+		}
+		.campaign__details .progress__bar.progress__bar--secondary {
+			background-color: ;
+		}
+
+		.campaign__actions-btn.donation-btn {
+			background-color:  !important;
+			color:  !important;
+			border-color:  !important;
+			text-transform: ;
+			font-size: px;
+		}
+		.campaign__actions-btn.donation-btn:hover {
+			background-color:  !important;
+			color:  !important;
+			border-color:  !important;
+		}
+		#share-campaign-btn,
+		#set-reminder-btn {
+			background-color: ;
+			color: ;
+			border-color: ;
+		}
+		#share-campaign-btn:hover,
+		#set-reminder-btn:hover {
+			background-color: ;
+			color: ;
+			border-color: ;
+		}
+
+		/* .back-modal.show-modal, */
+		.g-modal__content,
+		.donate__inner,
+		.back-modal-inner {
+			background-color: ;
+		}
+
+		.donate__amount-inner {
+			background-color: ;
+			color: ;
+		}
+
+		.donate__amount-inner:hover {
+			background-color: ;
+			border-color: ;
+		}
+
+		.form-group__amount,
+		.donate__custom-amount {
+			background-color: ;
+		}
+		.form-group__amount,
+		.form-group__amount:focus-within,
+		.donate__custom-amount.focus,
+		.donate__custom-amount:focus-within {
+			background-color: ;
+			border-color: ;
+		}
+
+		#reward-contribution-btn,
+		#crowdfundly-donate-btn {
+			background-color: ;
+			color: ;
+			border-color: ;			
+			font-size: px;
+		}
+		
+		.campaign__view-tab .g-tab {
+			background-color: ;
+		}
+
+		#campaignTab .nav-link,
+		#campaignTab .nav-link span {
+			color: ;
+			font-size: px;
+		}
+
+		#campaignTab .nav-link.active {
+			color: ;
+			border-color: ;
+		}
+		#campaignTab .g-tab__nav-item:not(.active) .nav-link.active {
+			background-color: ;
+		}
+
+		.tab-content.g-tab__body {
+			background-color: ;
+		}
+
+		.offer-card,
+		.tab-pane .activity,
+		.tab-pane .endorsement,
+		.tab-pane .donor-card {
+			background-color: ;
+		}
+
+		#crowdfundly-activites-load-more {
+			background-color: ;
+			color: ;
+			border-color: ;
+			font-size: px;
+		}
+
+		.campaign__view-related-title {
+			color: ;
+			font-size: px;
+		}
+
+		.crowdfundly-single-camp .campaign-card {
+			background-color: ;
+		}
+		.crowdfundly-single-camp .campaign-card:hover {
+			background-color: ;
+		}
+
+		.crowdfundly-single-camp .campaign-card__top {
+			background-color: ;
+		}
+
+		.crowdfundly-single-camp .campaign-card__title {
+			color: ;
+			font-size: px;
+		}
+
+		.crowdfundly-single-camp .campaign-card__description {
+			color: ;
+			font-size: px;
+		}
+
+		.crowdfundly-single-camp .progress--slim {
+			background-color: ;
+		}
+
+		.crowdfundly-single-camp .progress__bar--secondary {
+			background-color: ;
+		}
+
+		.crowdfundly-single-camp .campaign-card__amount {
+			color: ;
+		}
+		.crowdfundly-single-camp .campaign-card__amount strong {
+			color: ;
+		}
+		.crowdfundly-single-camp .campaign-card__amount,
+		.crowdfundly-single-camp .campaign-card__amount strong {
+			font-size: px;
+		}
+	</style>
+		<style type="text/css">
+
+        /*********** Easyjobs dynamic css started *************/
+        .easyjobs-frontend-wrapper.easyjobs-landing-page{
+            background-color: #f5f7fd;
+            width: 100%;
+            max-width: 100%;
+            padding-top: 50px;
+            padding-right: 50px;
+            padding-bottom: 50px;
+            padding-left: 50px;
+        }
+
+        .easyjobs-frontend-wrapper.easyjobs-landing-page .ej-header, .easyjobs-shortcode-wrapper.ej-template-classic .carrier__company, .easyjobs-frontend-wrapper.easyjobs-landing-page .about__company{
+            background-color: fff;
+            padding-top: 50px;
+            padding-right: 50px;
+            padding-bottom: 50px;
+            padding-left: 50px;
+        }
+
+        .easyjobs-landing-page .ej-header .ej-company-info .info .name{
+            font-size: 24px;
+        }
+        .easyjobs-landing-page .ej-header .ej-company-info .info .location{
+            font-size: 14px;
+        }
+
+        .easyjobs-landing-page .ej-header .ej-header-tools .ej-btn, .easyjobs-shortcode-wrapper.ej-template-classic .carrier__company .button, .easyjobs-shortcode-wrapper.ej-template-elegant .ej-company-info .ej-btn {
+            font-size: 14px;
+            color: #fff;
+            background-color: #2fc1e1;
+        }
+        .easyjobs-landing-page .ej-header .ej-header-tools .ej-btn:hover, .easyjobs-shortcode-wrapper.ej-template-classic .carrier__company .button:hover, .easyjobs-shortcode-wrapper.ej-template-elegant .ej-company-info .ej-btn:hover{
+            color: #fff;
+            background-color: #1fb6d7;
+        }
+        .easyjobs-landing-page .ej-company-description, .easyjobs-landing-page .ej-company-description p, .easyjobs-landing-page .ej-company-description p span, .easyjobs-landing-page .ej-company-description ul li, .easyjobs-landing-page .ej-company-description a{
+            font-size: 14px;
+            color: #7d8091;
+        }
+        .easyjobs-landing-page .easyjobs-shortcode-wrapper .ej-job-list .ej-job-list-item .ej-job-list-item-inner
+        .ej-job-list-item-col{
+            padding-top: 25px;
+            padding-right: 30px;
+            padding-bottom: 25px;
+            padding-left: 25px;
+            border-color: #f5f7fd;
+        }
+        .easyjobs-landing-page .easyjobs-shortcode-wrapper .ej-job-list .ej-job-list-item .ej-job-list-item-inner
+        .ej-job-list-item-col .ej-job-title{
+            font-size: 24px;
+        }
+        .easyjobs-landing-page .easyjobs-shortcode-wrapper .ej-job-list .ej-job-list-item .ej-job-list-item-inner
+        .ej-job-list-item-col .ej-job-title a{
+            color: #212529;
+        }
+        .easyjobs-landing-page .easyjobs-shortcode-wrapper .ej-job-list .ej-job-list-item .ej-job-list-item-inner
+        .ej-job-list-item-col .ej-job-title a:hover{
+            color: #0056b3;
+        }
+        .easyjobs-landing-page .easyjobs-shortcode-wrapper .ej-job-list .ej-job-list-item .ej-job-list-item-inner
+        .ej-job-list-item-col .ej-job-list-info .ej-job-list-info-block{
+            font-size: 14px;
+        }
+        .easyjobs-landing-page .easyjobs-shortcode-wrapper .ej-job-list .ej-job-list-item .ej-job-list-item-inner
+        .ej-job-list-item-col .ej-job-list-info .ej-job-list-info-block a{
+            color: #0056b3        }
+        .easyjobs-landing-page .easyjobs-shortcode-wrapper .ej-job-list .ej-job-list-item .ej-job-list-item-inner
+        .ej-job-list-item-col .ej-job-list-info .ej-job-list-info-block{
+            color: #7d8091        }
+        .easyjobs-landing-page .easyjobs-shortcode-wrapper .ej-job-list .ej-job-list-item .ej-job-list-item-inner
+        .ej-job-list-item-col .ej-deadline{
+            font-size: 18px;
+            color: #7d8091;
+        }
+        .easyjobs-landing-page .easyjobs-shortcode-wrapper .ej-job-list .ej-job-list-item .ej-job-list-item-inner
+        .ej-job-list-item-col .ej-list-sub{
+            font-size: 14px;
+            color: #7d8091;
+        }
+
+        .easyjobs-landing-page .easyjobs-shortcode-wrapper .ej-job-list .ej-job-list-item .ej-job-list-item-inner
+        .ej-job-list-item-col .ej-btn.ej-info-btn-light{
+            font-size: 14px;
+            color: #2fc1e1;
+            background-color: rgba(47,193,225,.1);
+        }
+
+        .easyjobs-landing-page .easyjobs-shortcode-wrapper .ej-job-list .ej-job-list-item .ej-job-list-item-inner
+        .ej-job-list-item-col .ej-btn.ej-info-btn-light:hover{
+            color: #fff;
+            background-color: #2fc1e1;
+        }
+
+        .easyjobs-landing-page .ej-section .ej-section-title .ej-section-title-text{
+            color: #2f323e;
+            font-size: 32px;
+        }
+        .easyjobs-landing-page .ej-section .ej-section-title .ej-section-title-icon{
+            color: #597dfc;
+            background-color: rgba(89,125,252,.1);
+        }
+        /* Details page */
+        
+        .easyjobs-frontend-wrapper.easyjobs-single-page{
+            background-color: #f5f7fd;
+            width: 100%;
+            max-width: 1400px;
+            padding-top: 50px;
+            padding-right: 50px;
+            padding-bottom: 50px;
+            padding-left: 50px;
+        }
+
+        .easyjobs-single-page .easyjobs-details .ej-job-header .ej-job-header-left .ej-job-overview, .easyjobs-shortcode-wrapper.ej-template-classic .job__more__details {
+						background-color: #fff;
+			            padding-top: 50px;
+            padding-right: 50px;
+            padding-bottom: 50px;
+            padding-left: 50px;
+		}
+        .easyjobs-single-page .ej-company-info .info .name{
+            font-size: 24px;
+        }
+
+        .easyjobs-single-page.ej-company-info .info .location{
+            font-size: 14px;
+        }
+
+        .easyjobs-single-page .easyjobs-details .ej-job-header .ej-job-header-left .ej-job-overview .ej-job-highlights .ej-job-highlights-item, .easyjobs-shortcode-wrapper.ej-template-classic .job__more__details .infos .info span, .easyjobs-shortcode-wrapper.ej-template-classic .job__more__details .infos .info p, .easyjobs-shortcode-wrapper.ej-template-classic .ej-container div.job__more__details > p{
+            font-size: 16px;
+        }
+        .easyjobs-single-page .easyjobs-details .ej-job-header .ej-job-header-left .ej-job-overview .ej-job-highlights .ej-job-highlights-item .ej-job-highlights-item-label, .easyjobs-shortcode-wrapper.ej-template-classic .job__more__details .infos .info p, .easyjobs-shortcode-wrapper.ej-template-classic .ej-container div.job__more__details > p i, .easyjobs-shortcode-wrapper.ej-template-classic .ej-container div.job__more__details > p span{
+            color: #1c2238;
+        }
+        .easyjobs-single-page.easyjobs-details .ej-job-header .ej-job-header-left .ej-job-overview .ej-job-highlights .ej-job-highlights-item .ej-job-highlights-item-value, .easyjobs-shortcode-wrapper.ej-template-classic .job__more__details .infos .info span, .easyjobs-shortcode-wrapper.ej-template-classic .ej-container div.job__more__details > p{
+            color: #7d8091;
+        }
+        .easyjobs-single-page .ej-apply-link .ej-btn.ej-info-btn, .easyjobs-shortcode-wrapper.ej-template-classic .job__more__details > a.button, .ej-template-elegant .ej-hero .job__infos__block .meta .button{
+            font-size: 14px;
+            background-color: #2fc1e1;
+            color: #fff;
+        }
+        .easyjobs-single-page .ej-apply-link .ej-btn.ej-info-btn:hover, .easyjobs-shortcode-wrapper.ej-template-classic .job__more__details > a.button:hover, .ej-template-elegant .ej-hero .job__infos__block .meta .button:hover{
+            background-color: #1fb6d7;
+            color: #fff;
+        }
+        .easyjobs-single-page .easyjobs-details .ej-job-header .ej-job-header-left .ej-job-overview-footer .ej-social-share ul li a, .easyjobs-frontend-wrapper .easyjobs-shortcode-wrapper .job__more__details .share__options ul li a{
+            width: 50px;
+            height: 50px;
+        }
+        .easyjobs-single-page .easyjobs-details .ej-job-header .ej-job-header-left .ej-job-overview-footer .ej-social-share ul li a svg{
+            width: 18px;
+            height: 18px;
+        }
+        .easyjobs-frontend-wrapper .easyjobs-shortcode-wrapper .job__more__details .share__options ul li a i{
+            font-size: 18px;
+            line-height: 50px;
+        }
+
+        .easyjobs-single-page .easyjobs-details .ej-content-block h1{
+            font-size: 32px;
+        }
+        .easyjobs-single-page .easyjobs-details .ej-content-block h2{
+            font-size: 28px;
+        }
+        .easyjobs-single-page .easyjobs-details .ej-content-block h3{
+            font-size: 24px;
+        }
+        .easyjobs-single-page .easyjobs-details .ej-content-block h4{
+            font-size: 21px;
+        }
+        .easyjobs-single-page .easyjobs-details .ej-content-block h5{
+            font-size: 18px;
+        }
+        .easyjobs-single-page .easyjobs-details .ej-content-block h6{
+            font-size: 16px;
+        }
+        .easyjobs-single-page .easyjobs-details .ej-content-block p,
+        .easyjobs-single-page .easyjobs-details .ej-content-block ul li,
+        .easyjobs-single-page .easyjobs-details .ej-content-block ol li,
+        .easyjobs-single-page .easyjobs-details .ej-label{
+            font-size: 14px;
+        }
+        .easyjobs-single-page .ej-section .ej-section-title .ej-section-title-text{
+            font-size: 32px;
+        }
+                
+        
+
+        /****** end easy jobs dynamic css *******/
+	</style>
+		<meta name="generator" content="Site Kit by Google 1.87.0"> <noscript><style>.woocommerce-product-gallery{ opacity: 1 !important; }</style></noscript>
+		<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style><style
+			type="text/css" id="flexia-dynamic-css">.flexia-primary-menu .customize-partial-edit-shortcut button {
+		margin-left: 50px;
+	}
+
+	.site-title a, .site-description {
+		color: #F56A6A;
+	}
+	
+	body, button, input, select, optgroup, textarea {
+		color: #4d4d4d;
+	}
+	
+	body {
+		font-family: "Open Sans", -apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
+		font-size: 16px;
+		line-height: 1.4;
+		text-transform: none;
+		background-color: #fff;
+		background-image: none;
+		background-size: auto;
+		background-position: center center;
+		background-repeat: no-repeat;
+	}
+	
+	p {
+		font-family: "Open Sans", -apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
+		font-size: 1em;
+		line-height: 1.4;
+		text-transform: none;
+	}
+	
+	h1, h2, h3, h4, h5, h6 {
+		font-family: "Open Sans", "Helvetica Neue",sans-serif;
+		color: #333333;
+		line-height: 1.4;
+		text-transform: none;
+	}
+	
+	h1 {
+		font-size: 2em;
+	}
+	
+	h2 {
+		font-size: 1.5em;
+	}
+	
+	h3 {
+		font-size: 1.17em;
+	}
+	
+	h4 {
+		font-size: 1em;
+	}
+	
+	h5 {
+		font-size: .83em;
+	}
+	
+	h6 {
+		font-size: .75em;
+	}
+
+	.site-content a {
+		font-size: 1em;
+	}
+	
+	a {
+		color: #F56A6A;
+		font-family: "Open Sans", -apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
+		line-height: 1;
+		text-transform: none;
+	}
+	
+	a:hover, a:focus, a:active {
+		color: #ff5544;
+	}
+	
+	input[type=button], button {
+		color: #fff;
+		background-color: #F56A6A;
+		font-family: "Open Sans", -apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
+		font-size: 1em;
+		line-height: 1.4;
+		text-transform: none;
+	}
+	
+	.flexia-container.width {
+		width: 90%;
+	}
+	
+	.flexia-container.max {
+		max-width: 1200px;
+	}
+	
+	.single .entry-content-wrapper {
+		width: 90%;
+		max-width: 1200px;
+	}
+	
+	.flexia-sidebar-left {
+		width: 30%;
+	}
+	
+	.flexia-sidebar-right {
+		width: 30%;
+	}
+	
+	body.blog, body.archive, body.single-post,
+	body.blog.custom-background, body.archive.custom-background, body.single-post.custom-background, body.search,error404 {
+		background-color: #F2F3F6;
+	}
+	
+	.flexia-wrapper > .content-area, .entry-content.single-post-entry,
+	body.blog .flexia-wrapper > .content-area article.post,
+	body.archive .flexia-wrapper > .content-area article.post {
+		background-color: #fff;
+	}
+	
+	.single-post .entry-header.single-blog-meta.single-post-meta-large {
+		background-color: #fff;
+	}
+	
+	.flexia-sidebar .widget {
+		background-color: #fff;
+	}
+	
+	.site-branding .flexia-header-logo > img {
+		width: 180px;
+	}
+
+	.site-branding .flexia-header-sticky-logo  > img {
+		width: 150px;
+	}
+	
+	.header-content .flexia-blog-logo {
+		width: 150px;
+	}
+
+	.page-header.blog-header, .page-header.single-blog-header {
+		background-color: #612ee9;
+	}
+
+	/* Archive page header */
+	.page-header.archive-header {
+		background-color: #612ee9;
+	}
+
+	.archive-header .header-content > .page-title {
+		font-size: 54px;
+		color: #ffffff;
+		font-family: Poppins;
+	}
+
+	.header-content .archive-description > p {
+		font-size: 28px;
+		color: #ffffff;
+		font-family: Nunito;
+	}
+
+	.blog-header .header-content > .page-title {
+		font-size: 54px;
+		color: #ffffff;
+		font-family: Poppins;
+	}
+	
+	.paged .blog-header .header-content > .page-title, .paged .archive-header .header-content > .page-title {
+		font-size: calc(54px / 1.2);
+	}
+	
+	.header-content .blog-desc {
+		font-size: 28px;
+		color: #ffffff;
+		font-family: Nunito;
+	}
+	
+	.paged .header-content .blog-desc, .paged .header-content .archive-description > p {
+		font-size: calc(28px / 1.2);
+	}
+	
+	.page .entry-header.entry-header-large, .page .entry-header.entry-header-mini, .page-header.error-header, .page-header.search-header {
+		background-color: #28292e;
+	}
+	
+	.page .entry-header .entry-title, .page-header.error-header .page-title, .page-header.search-header .page-title {
+		color: #333333;
+		font-size: 36px;
+	}
+	
+	.flexia-breadcrumb .flexia-breadcrumb-item, .flexia-breadcrumb .flexia-breadcrumb-item a, .flexia-breadcrumb .breadcrumb-delimiter {
+		color: #fefefe;
+		font-size: 12px;
+	}
+
+	.flexia-breadcrumb .flexia-breadcrumb-item, .flexia-breadcrumb .flexia-breadcrumb-item a, .flexia-breadcrumb .breadcrumb-delimiter svg,
+	.woocommerce-breadcrumb .breadcrumb-separator svg {
+		fill: #fefefe;
+		height: 9.6px;
+		width: auto;
+	}
+	
+	.flexia-breadcrumb-item.current span, .breadcrumb li a:hover, .breadcrumb li a:focus {
+		color: #ffffff;
+	}
+	
+	.flexia-search-overlay {
+		background-color: #121738;
+	}
+	
+	.flexia-search-overlay::before, .flexia-search-overlay::after {
+		border: 10px solid #121738;
+	}
+	
+	.icon-search-close {
+		height: 50px;
+		width: 50px;
+		fill: #fff;
+	}
+	
+	.btn--search-close:hover .icon-search-close {
+		fill: #fff;
+	}
+	
+	.search--input-wrapper .search__input, .search--input-wrapper .search__input:focus {
+		color: #fff;
+		font-size: 48px;
+	}
+	
+	.search--input-wrapper::after {
+		font-size: 48px;
+	}
+	
+	.search--input-wrapper::after {
+		border-color: #fff;
+	}
+	
+	.search__info {
+		color: #fff;
+		font-size: 16px;
+	}
+	
+	.flexia-topbar-content {
+		color: #ffffff;
+		font-size: .8em;
+	}
+	
+	.flexia-topbar a, .flexia-topbar_contact a {
+		color: #ffffff;
+		font-size: .8em;
+	}
+
+	.flexia-topbar_contact a svg {
+		fill: #ffffff;
+		height: 0.96em;
+		width: auto;
+		margin-right: 5px;
+	}
+	
+	.flexia-topbar_contact a:hover {
+		color: #eeeeee;
+	}
+	
+	.flexia-social-links li a svg {
+		fill: inherit;
+		height: 1em;
+		width: auto;
+	}
+	
+	.flexia-social-links li a:hover svg {
+		fill: inherit;
+	}
+	
+	.flexia-woo-sidebar .widget_price_filter .ui-slider .ui-slider-range,
+	.flexia-woo-sidebar .widget_price_filter .ui-slider .ui-slider-handle,
+	.single-product.woocommerce .product .cart .single_add_to_cart_button,
+	aside .widget button, 
+	.flexia-woo-sidebar .widget button,
+	.widget .search-form .search-submit {
+		background-color: #F56A6A;
+	}
+
+	.single-product.woocommerce .product .woocommerce-tabs ul.wc-tabs > li.active::before,
+	input:focus, textarea:focus, select:focus,
+	.widget .search-form .search-submit {
+		border-color: #F56A6A;
+	}
+
+	.single-blog-meta .entry-meta svg {
+		fill: #F56A6A;
+		width: auto;
+		height: 1em;
+		margin-right: 5px;
+    	margin-bottom: -3px;
+	}
+
+	.flexia-menu.header-icons ul li.navbar-login-menu a button svg {
+		fill: #fff;
+		height: 1em;
+		margin-bottom: -3px;
+	}
+
+	.single .entry-footer svg {
+		height: 1em;
+		margin: 0 5px -3px 0;
+		fill: #4d4d4d;
+	}
+
+	body.blog .flexia-wrapper > .content-area article .entry-content .more-link {
+		color: #fff;
+		background-color: #F56A6A;
+		border: 1px solid transparent;
+    	border-radius: 4px;
+	}
+	body.blog .flexia-wrapper > .content-area article .entry-content .more-link:hover {
+		background: #3f3f46;
+		color: #fff;
+		border: 1px solid #3f3f46;
+	}
+	
+	@media all and (max-width: 959px) {
+		.blog-header .header-content > .page-title, .archive-header .header-content > .page-title {
+			font-size: calc(54px * .75);
+		}
+	
+		.header-content .blog-desc, .header-content .archive-description > p {
+			font-size: calc(28px * .75);
+		}
+	}
+	
+	@media all and (max-width: 480px) {
+		.blog-header .header-content > .page-title, .archive-header .header-content > .page-title {
+			font-size: calc(54px * .5);
+		}
+	
+		.header-content .blog-desc, .header-content .archive-description > p {
+			font-size: calc(28px * .5);
+		}
+	}
+	
+	.flexia-header-widget-area {
+		background-color: #262625;
+	}
+	
+	.flexia-topbar {
+		background-color: #F56A6A;
+	}
+	
+	.flexia-logobar {
+		background-color: #fff;
+	}
+	
+	.flexia-navbar {
+		background-color: #fff;
+		padding: 0px 15px 0px 15px;
+	}
+	
+	.flexia-menu.header-icons .nav-menu li > a,
+	.flexia-navbar .flexia-navbar-container .flexia-navbar-inner .search-form .search-field,
+	.flexia-menu.header-icons {
+		color: #4d4d4d;
+	}
+
+	.flexia-navbar .flexia-navbar-container .flexia-navbar-inner .search-form .search-submit svg,
+	.flexia-menu.header-icons ul li #btn-search svg,
+	.widget .search-form .search-submit svg {
+		fill: #4d4d4d;
+		height: .9em;
+		width: auto;
+	}
+
+	.main-navigation .nav-menu li a svg {
+		fill: #4d4d4d;
+		height: .7em;
+		width: auto;
+		margin-left: 5px;
+	}
+
+	.flexia-menu.header-icons .flexia-header-cart a.cart-contents .flexia-header-cart-icon svg {
+		fill: #4d4d4d;
+		height: 1em;
+		width: auto;
+	}
+
+	.flexia-menu .flexia-menu-toggle:after {
+		border-color: #4d4d4d;
+	}
+	.flexia-menu .flexia-menu-toggle:before, .flexia-menu .flexia-menu-toggle.flexia-menu-toggle-open::after {
+		background-color: #4d4d4d;
+	}
+
+	.flexia-social-share-links li a svg {
+		height: 2em;
+		width: auto;
+		fill: #F56A6A;
+	}
+
+
+	.blog .flexia-load-more-button {
+		background-color: #444;
+		color: #fff;
+		font-size: 14px;
+	}
+	.blog .flexia-load-more-button:hover,
+	.blog .flexia-load-more-button.button--loading {
+		background-color: #27bdbd;
+		color: #fff;
+	}
+
+	.archive .flexia-load-more-button {
+		background-color: #444444;
+		color: #ffffff;
+		font-size: 14px;
+	}
+
+	.archive .flexia-load-more-button:hover,
+	.archive .flexia-load-more-button.button--loading {
+		background-color: #27bdbd;
+		color: #ffffff;
+	}
+	
+	@media screen and (min-width: 992px) {
+		.main-navigation .nav-menu li > a, .flexia-menu.header-icons .nav-menu li > a {
+			color: #4d4d4d;
+		}
+	
+		.main-navigation .nav-menu li:hover > a:not(.cart-contents), 
+		.main-navigation .nav-menu li.current-menu-item > a:not(.cart-contents), 
+		.main-navigation .nav-menu li.current-menu-ancestor > a:not(.cart-contents) {
+			color: #1b1f21;
+		}
+	
+		.main-navigation .nav-menu > li > a:after {
+			color: #1b1f21;
+			background-color: #1b1f21;
+		}
+	
+		.main-navigation .nav-menu li:hover > a:not(.cart-contents), 
+		.main-navigation .nav-menu li.current-menu-item > a:not(.cart-contents), 
+		.main-navigation .nav-menu li.current-menu-ancestor > a:not(.cart-contents) {
+			background-color: #ffffff;
+		}
+	
+		.main-navigation .nav-menu li ul {
+			background-color: #ffffff;
+		}
+	
+		.main-navigation .nav-menu li ul li > a, 
+		.main-navigation .nav-menu li ul.flexia-mega-menu li:hover > a:not(.cart-contents) {
+			color: #4d4d4d;
+		}
+	
+		.main-navigation .nav-menu li ul.flexia-mega-menu li:hover > a:not(.cart-contents) {
+			background-color: initial;
+		}
+	
+		.main-navigation .nav-menu li ul li:hover > a:not(.cart-contents), 
+		.main-navigation .nav-menu li ul li.current-menu-item > a:not(.cart-contents), 
+		.main-navigation .nav-menu li ul li.current-menu-ancestor > a:not(.cart-contents), 
+		.main-navigation .nav-menu li ul.flexia-mega-menu li > a:not(.cart-contents):hover {
+			color: #1b1f21;
+		}
+	
+		.main-navigation .nav-menu li ul li:hover > a:not(.cart-contents), 
+				.main-navigation .nav-menu li ul li.current-menu-item > a:not(.cart-contents), 
+				.main-navigation .nav-menu li ul li.current-menu-ancestor > a:not(.cart-contents), 
+				.main-navigation .nav-menu li ul.flexia-mega-menu li > a:not(.cart-contents):hover {
+			background-color: #f4f4f4;
+		}
+	
+		.topbar-navigation .nav-menu li > a {
+			color: #cbced3;
+		}
+	
+		.topbar-navigation .nav-menu li:hover > a, .topbar-navigation .nav-menu li.current-menu-item > a, .topbar-navigation .nav-menu li.current-menu-ancestor > a {
+			color: #ffffff;
+		}
+	
+		.topbar-navigation .nav-menu li:hover > a, .topbar-navigation .nav-menu li.current-menu-item > a, .topbar-navigation .nav-menu li.current-menu-ancestor > a {
+			background-color: rgba(0, 0, 0, 0.5);
+		}
+	
+		.topbar-navigation .nav-menu li ul {
+			background-color: #262625;
+		}
+	
+		.topbar-navigation .nav-menu li ul li > a {
+			color: #cbced3;
+		}
+	
+		.topbar-navigation .nav-menu li ul li:hover > a, .topbar-navigation .nav-menu li ul li.current-menu-item > a, .topbar-navigation .nav-menu li ul li.current-menu-ancestor > a {
+			color: #ffffff;
+		}
+	
+		.topbar-navigation .nav-menu li ul li:hover > a, .topbar-navigation .nav-menu li ul li.current-menu-item > a, .topbar-navigation .nav-menu li ul li.current-menu-ancestor > a {
+			background-color: rgba(0, 0, 0, 0.5);
+		}
+	}
+	
+	.flexia-footer-widget-area {
+		background-color: #313131;
+	}
+	
+	.flexia-colophon-inner .widget {
+		color: #cfcfcf;
+	}
+	
+	.flexia-colophon-inner .widget a {
+		color: #cbced3;
+	}
+	
+	.flexia-colophon-inner .widget a:hover {
+		color: #ff5544;
+	}
+	
+	.flexia-site-footer {
+		background-color: #262625;
+	}
+	
+	.flexia-site-footer .site-info {
+		color: #9a9a9a;
+	}
+	
+	.flexia-site-footer .site-info a, .flexia-footer-menu li a {
+		color: #ffffff;
+	}
+	
+	.flexia-site-footer .site-info a:hover, .flexia-footer-menu li a:hover {
+		color: #E65A50;
+	}
+	
+	.customize-partial-edit-shortcut-button {
+		padding: 3px !important;
+		border-radius: 50% !important;
+		border: 2px solid #fff !important;
+	}
+	
+	.header{
+		background: transparent;
+		position: fixed;
+		width: 100%;
+		z-index: 1;
+		backdrop-filter: blur(10px);
+	}
+
+	</style>
+	</head>
+	<body class="page-template page-template-elementor_header_footer page
+		page-id-18800 page-parent theme-flexia woocommerce-js flexia-2.3.1
+		elementor-default elementor-template-full-width elementor-kit-119
+		elementor-page elementor-page-18800 e--ua-blink e--ua-chrome e--ua-webkit"
+		data-elementor-device-mode="desktop" cz-shortcut-listen="true"
+		style="width:1519px;">
+		<div id="page" class="site">
+			<div data-elementor-type="header" data-elementor-id="18883" class="header
+				elementor
+				elementor-18883 elementor-location-header">
+				<div class="elementor-section-wrap">
+					<section data-particle_enable="false" data-particle-mobile-disabled="false"
+						class="elementor-section elementor-top-section elementor-element
+						elementor-element-4d95f85 elementor-section-content-middle
+						elementor-section-boxed elementor-section-height-default
+						elementor-section-height-default" data-id="4d95f85"
+						data-settings='{" background_background":" classic","
+						background_motion_fx_motion_fx_scrolling":" yes","
+						background_motion_fx_scale_effect":" yes","
+						background_motion_fx_scale_direction":" in-out-in","
+						background_motion_fx_scale_speed":{" unit":" px"," size":3," sizes":[]},"
+						background_motion_fx_devices":[" desktop"," tablet"],"
+						background_motion_fx_range":" viewport","
+						background_motion_fx_scale_range":{" unit":"%"," size":""," sizes":{"
+						start":20," end":80}}}'
+						data-element_type="section" id="header_section">
+						<div class="elementor-container elementor-column-gap-no">
+							<div class="elementor-row">
+								<div class="elementor-column elementor-col-33 elementor-top-column
+									elementor-element elementor-element-bf78d1b" data-id="bf78d1b"
+									data-element_type="column">
+									<div class="elementor-column-wrap elementor-element-populated">
+										<div class="elementor-widget-wrap">
+											<div class="elementor-element elementor-element-0a8f2ff
+												elementor-widget elementor-widget-image" data-id="0a8f2ff"
+												data-element_type="widget" data-widget_type="image.default">
+												<div class="elementor-widget-container">
+													<div class="elementor-image">
+														<img src="Files/Images/logo.png" loading="lazy" data-image-size="full" style="width: 80px !important">
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="elementor-column elementor-col-33 elementor-top-column
+									elementor-element elementor-element-b28b760" data-id="b28b760"
+									data-element_type="column">
+									<div class="elementor-column-wrap elementor-element-populated">
+										<div class="elementor-widget-wrap">
+											<div class="elementor-element elementor-element-dc20fbf
+												eael-simple-menu-hamburger-align-left
+												eael_simple_menu_hamburger_disable_selected_menu_no
+												eael-hamburger--tablet elementor-widget
+												elementor-widget-eael-simple-menu eael-hamburger--not-responsive"
+												data-id="dc20fbf" data-element_type="widget"
+												data-widget_type="eael-simple-menu.default">
+												<div class="elementor-widget-container">
+													<div class="eael-simple-menu-container eael-simple-menu-align-right
+														eael-simple-menu--stretch eael-simple-menu-dropdown-align-left
+														preset-1">
+														<ul id="menu-gamezone-header-menu" class="eael-simple-menu
+															eael-simple-menu-dropdown-animate-to-top
+															eael-simple-menu-indicator eael-hamburger-left
+															eael-simple-menu-horizontal">
+															<li id="menu-item-19274"
+																class="menu-item menu-item-type-post_type menu-item-object-page
+																current-menu-item page_item page-item-18800 current_page_item
+																menu-item-19274">
+																<a href="#home" aria-current="page">Home</a>
+															</li>
+															<li id="menu-item-19273" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-19273">
+																<a href="#about">About</a>
+														</ul>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							<div class="elementor-column elementor-col-33 elementor-top-column
+								elementor-element elementor-element-c8711b4" data-id="c8711b4"
+								data-element_type="column">
+								<div class="elementor-column-wrap elementor-element-populated">
+									<div class="elementor-widget-wrap">
+										<div class="elementor-element elementor-element-65b222e skew-button
+											elementor-widget__width-auto elementor-widget
+											elementor-widget-button" data-id="65b222e" data-element_type="widget"
+											data-widget_type="button.default">
+											<div class="elementor-widget-container">
+												<div class="elementor-button-wrapper">
+													<a href="Files/Game/Game.zip"
+														class="elementor-button-link elementor-button elementor-size-sm"
+														role="button" download>
+														<span class="elementor-button-content-wrapper">
+															<span class="elementor-button-text">Download</span>
+														</span>
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+			</div>
+		</div>
+		<div data-elementor-type="wp-page" data-elementor-id="18800" class="elementor
+			elementor-18800">
+			<div class="elementor-inner">
+				<div class="elementor-section-wrap elementor-motion-effects-parent">
+					<section data-particle_enable="false" data-particle-mobile-disabled="false"
+						class="elementor-section elementor-top-section elementor-element
+						elementor-element-fbe1d9c elementor-section-boxed
+						elementor-section-height-default elementor-section-height-default
+						elementor-motion-effects-element
+						elementor-motion-effects-element-type-background" data-id="fbe1d9c"
+						data-element_type="section"
+						data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;background_motion_fx_motion_fx_scrolling&quot;:&quot;yes&quot;,&quot;background_motion_fx_scale_effect&quot;:&quot;yes&quot;,&quot;background_motion_fx_scale_direction&quot;:&quot;in-out-in&quot;,&quot;background_motion_fx_scale_speed&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:3,&quot;sizes&quot;:[]},&quot;background_motion_fx_devices&quot;:[&quot;desktop&quot;,&quot;tablet&quot;],&quot;background_motion_fx_range&quot;:&quot;viewport&quot;,&quot;background_motion_fx_scale_range&quot;:{&quot;unit&quot;:&quot;%&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:{&quot;start&quot;:20,&quot;end&quot;:80}}}"
+						style="--e-transform-transition-duration:100ms;"><div
+							class="elementor-motion-effects-container"><div
+								class="elementor-motion-effects-layer" style="width: 100%; height: 100%;
+								--scale:1.1845; transform: scale(var(--scale));"></div></div>
+						<div class="elementor-container elementor-column-gap-no">
+							<div class="elementor-row">
+								<div class="elementor-column elementor-col-50 elementor-top-column
+									elementor-element elementor-element-3a0310a
+									elementor-motion-effects-parent animated fadeIn" data-id="3a0310a"
+									data-element_type="column"
+									data-settings="{&quot;animation&quot;:&quot;fadeIn&quot;,&quot;motion_fx_motion_fx_scrolling&quot;:&quot;yes&quot;,&quot;motion_fx_scale_effect&quot;:&quot;yes&quot;,&quot;motion_fx_scale_speed&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:2,&quot;sizes&quot;:[]},&quot;motion_fx_devices&quot;:[&quot;desktop&quot;,&quot;tablet&quot;],&quot;motion_fx_translateY_effect&quot;:&quot;yes&quot;,&quot;motion_fx_translateY_speed&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:2,&quot;sizes&quot;:[]},&quot;motion_fx_translateY_affectedRange&quot;:{&quot;unit&quot;:&quot;%&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:{&quot;start&quot;:0,&quot;end&quot;:100}},&quot;motion_fx_scale_direction&quot;:&quot;out-in&quot;,&quot;motion_fx_scale_range&quot;:{&quot;unit&quot;:&quot;%&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:{&quot;start&quot;:20,&quot;end&quot;:80}}}">
+									<div class="elementor-column-wrap elementor-element-populated
+										elementor-motion-effects-element" style="--scale:1.02134;
+										--translateY:47.2px; --e-transform-transition-duration:100ms;
+										transform: scale(var(--scale))translateY(var(--translateY));">
+										<div class="elementor-widget-wrap">
+											<div class="elementor-element elementor-element-70d290b
+												elementor-widget elementor-widget-heading" data-id="70d290b"
+												data-element_type="widget" data-widget_type="heading.default">
+												<div class="elementor-widget-container">
+													<h2 class="elementor-heading-title elementor-size-default">Welcome</h2>
+												</div>
+											</div>
+											<div class="elementor-element elementor-element-288c98b
+												elementor-widget elementor-widget-heading" data-id="288c98b"
+												data-element_type="widget" data-widget_type="heading.default">
+												<div class="elementor-widget-container">
+													<h3 class="elementor-heading-title elementor-size-default">:)</h3>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="elementor-column elementor-col-50 elementor-top-column
+									elementor-element elementor-element-054db1a elementor-hidden-tablet
+									elementor-hidden-phone" data-id="054db1a" data-element_type="column">
+									<div class="elementor-column-wrap elementor-element-populated">
+										<div class="elementor-widget-wrap">
+											<div class="elementor-element elementor-element-a5ca80f
+												elementor-widget__width-auto elementor-absolute elementor-widget
+												elementor-widget-image elementor-motion-effects-parent"
+												data-id="a5ca80f" data-element_type="widget"
+												data-settings="{&quot;_position&quot;:&quot;absolute&quot;,&quot;motion_fx_motion_fx_scrolling&quot;:&quot;yes&quot;,&quot;motion_fx_translateY_effect&quot;:&quot;yes&quot;,&quot;motion_fx_translateY_speed&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:3,&quot;sizes&quot;:[]},&quot;motion_fx_translateX_effect&quot;:&quot;yes&quot;,&quot;motion_fx_translateX_speed&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:3,&quot;sizes&quot;:[]},&quot;motion_fx_scale_effect&quot;:&quot;yes&quot;,&quot;motion_fx_scale_direction&quot;:&quot;in-out&quot;,&quot;motion_fx_scale_speed&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:2,&quot;sizes&quot;:[]},&quot;motion_fx_translateY_affectedRange&quot;:{&quot;unit&quot;:&quot;%&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:{&quot;start&quot;:0,&quot;end&quot;:100}},&quot;motion_fx_translateX_affectedRange&quot;:{&quot;unit&quot;:&quot;%&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:{&quot;start&quot;:0,&quot;end&quot;:100}},&quot;motion_fx_scale_range&quot;:{&quot;unit&quot;:&quot;%&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:{&quot;start&quot;:20,&quot;end&quot;:80}},&quot;motion_fx_devices&quot;:[&quot;desktop&quot;,&quot;tablet&quot;,&quot;mobile&quot;]}"
+												data-widget_type="image.default">
+												<div class="elementor-widget-container
+													elementor-motion-effects-element" style="--translateY:50.01px;
+													--translateX:50.01px; --scale:1.15556;
+													--e-transform-transition-duration:100ms; transform:
+													translateY(var(--translateY))translateX(var(--translateX))scale(var(--scale));">
+													<div class="elementor-image">
+														<img decoding="async" width="234" height="265"
+															src="Files/Images/70673c2d-roket.png" class="attachment-full size-full
+															wp-stateless-item" alt="" loading="lazy" data-image-size="full"
+															data-stateless-media-bucket="static.live.templately.com"
+															data-stateless-media-name="2020/09/70673c2d-roket.png"> </div>
+												</div>
+											</div>
+											<div class="elementor-element elementor-element-854572e
+												elementor-widget__width-auto elementor-absolute elementor-widget
+												elementor-widget-image elementor-motion-effects-parent"
+												data-id="854572e" data-element_type="widget"
+												data-settings="{&quot;_position&quot;:&quot;absolute&quot;,&quot;motion_fx_motion_fx_scrolling&quot;:&quot;yes&quot;,&quot;motion_fx_translateY_effect&quot;:&quot;yes&quot;,&quot;motion_fx_translateY_speed&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:2,&quot;sizes&quot;:[]},&quot;motion_fx_translateX_effect&quot;:&quot;yes&quot;,&quot;motion_fx_translateX_direction&quot;:&quot;negative&quot;,&quot;motion_fx_translateX_speed&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:2,&quot;sizes&quot;:[]},&quot;motion_fx_scale_effect&quot;:&quot;yes&quot;,&quot;motion_fx_scale_direction&quot;:&quot;in-out&quot;,&quot;motion_fx_scale_speed&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:2,&quot;sizes&quot;:[]},&quot;motion_fx_translateY_affectedRange&quot;:{&quot;unit&quot;:&quot;%&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:{&quot;start&quot;:0,&quot;end&quot;:100}},&quot;motion_fx_translateX_affectedRange&quot;:{&quot;unit&quot;:&quot;%&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:{&quot;start&quot;:0,&quot;end&quot;:100}},&quot;motion_fx_scale_range&quot;:{&quot;unit&quot;:&quot;%&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:{&quot;start&quot;:20,&quot;end&quot;:80}},&quot;motion_fx_devices&quot;:[&quot;desktop&quot;,&quot;tablet&quot;,&quot;mobile&quot;]}"
+												data-widget_type="image.default">
+												<div class="elementor-widget-container
+													elementor-motion-effects-element" style="--translateY:16.16px;
+													--translateX:-16.16px; --scale:1.12694;
+													--e-transform-transition-duration:100ms; transform:
+													translateY(var(--translateY))translateX(var(--translateX))scale(var(--scale));">
+													<div class="elementor-image">
+														<img decoding="async" width="178" height="65"
+															src="Files/Images/8ef44354-spaceship.png" class="attachment-full
+															size-full wp-stateless-item" alt="" loading="lazy"
+															data-image-size="full"
+															data-stateless-media-bucket="static.live.templately.com"
+															data-stateless-media-name="2020/09/8ef44354-spaceship.png">
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+					<section data-particle_enable="false" data-particle-mobile-disabled="false"
+						class="elementor-section elementor-top-section elementor-element
+						elementor-element-362ef6a elementor-section-content-middle
+						elementor-section-boxed elementor-section-height-default
+						elementor-section-height-default" data-id="362ef6a"
+						data-element_type="section"
+						data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+						<div class="elementor-container elementor-column-gap-no">
+							<div class="elementor-row">
+								<div class="elementor-column elementor-col-50 elementor-top-column
+									elementor-element elementor-element-6d92db3" data-id="6d92db3"
+									data-element_type="column">
+									<div class="elementor-column-wrap elementor-element-populated">
+										<div class="elementor-widget-wrap">
+											<div class="elementor-element elementor-element-f8f7f61
+												elementor-widget__width-auto elementor-widget
+												elementor-widget-heading" data-id="f8f7f61"
+												data-element_type="widget" data-widget_type="heading.default">
+												<div class="elementor-widget-container">
+													<h4 class="elementor-heading-title elementor-size-default">ABOUT
+														THIS GAME</h4>
+												</div>
+											</div>
+											<div class="elementor-element elementor-element-c7225c0
+												elementor-widget__width-auto elementor-widget-divider--view-line
+												elementor-widget elementor-widget-divider" data-id="c7225c0"
+												data-element_type="widget" data-widget_type="divider.default">
+												<div class="elementor-widget-container">
+													<div class="elementor-divider">
+														<span class="elementor-divider-separator">
+														</span>
+													</div>
+												</div>
+											</div>
+											<div class="elementor-element elementor-element-9bbd59e
+												game-image-hover elementor-invisible elementor-widget
+												elementor-widget-image elementor-motion-effects-parent
+												elementor-motion-effects-perspective" data-id="9bbd59e"
+												data-element_type="widget"
+												data-settings="{&quot;_animation&quot;:&quot;fadeInLeft&quot;,&quot;motion_fx_motion_fx_mouse&quot;:&quot;yes&quot;,&quot;motion_fx_tilt_effect&quot;:&quot;yes&quot;,&quot;motion_fx_tilt_speed&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:3,&quot;sizes&quot;:[]}}"
+												data-widget_type="image.default">
+												<div class="elementor-widget-container
+													elementor-motion-effects-element" style="--rotateX:-1.72911deg;
+													--rotateY:-3.125deg; transform:
+													rotateX(var(--rotateX))rotateY(var(--rotateY));">
+													<div class="elementor-image">
+															<img decoding="async" width="525" height="300"
+																src="Files/Images/snapshot15.png" class="attachment-full size-full
+																wp-stateless-item" alt="" loading="lazy"
+																sizes="(max-width: 525px) 100vw, 525px"
+																data-image-size="full">
+													</div>
+												</div>
+											</div>
+											<div class="elementor-element elementor-element-d9fbe45
+												game-image-hover elementor-invisible elementor-widget
+												elementor-widget-image elementor-motion-effects-parent
+												elementor-motion-effects-perspective" data-id="d9fbe45"
+												data-element_type="widget"
+												data-settings="{&quot;_animation&quot;:&quot;fadeInLeft&quot;,&quot;motion_fx_motion_fx_mouse&quot;:&quot;yes&quot;,&quot;motion_fx_tilt_effect&quot;:&quot;yes&quot;,&quot;motion_fx_tilt_speed&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:3,&quot;sizes&quot;:[]}}"
+												data-widget_type="image.default">
+												<div class="elementor-widget-container
+													elementor-motion-effects-element" style="--rotateX:-1.72911deg;
+													--rotateY:-3.125deg; transform:
+													rotateX(var(--rotateX))rotateY(var(--rotateY));">
+													<div class="elementor-image">
+															<img decoding="async" width="525" height="250"
+																src="Files/Images/snapshot16.png" class="attachment-full size-full
+																wp-stateless-item" alt="" loading="lazy"
+																sizes="(max-width: 525px) 100vw, 525px"
+																data-image-size="full">
+													</div>
+												</div>
+											</div>
+											
+											<div class="elementor-element elementor-element-0146975
+												game-image-hover elementor-invisible elementor-widget
+												elementor-widget-image elementor-motion-effects-parent
+												elementor-motion-effects-perspective" data-id="0146975"
+												data-element_type="widget"
+												data-settings="{&quot;_animation&quot;:&quot;fadeInLeft&quot;,&quot;motion_fx_motion_fx_mouse&quot;:&quot;yes&quot;,&quot;motion_fx_tilt_effect&quot;:&quot;yes&quot;,&quot;motion_fx_tilt_speed&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:3,&quot;sizes&quot;:[]}}"
+												data-widget_type="image.default">
+												<div class="elementor-widget-container
+													elementor-motion-effects-element" style="--rotateX:-1.72911deg;
+													--rotateY:-3.125deg; transform:
+													rotateX(var(--rotateX))rotateY(var(--rotateY));">
+													<div class="elementor-image">
+															<img decoding="async" width="525" height="300"
+																src="Files/Images/snapshot17.png" class="attachment-full size-full
+																wp-stateless-item" alt="" loading="lazy"
+																sizes="(max-width: 525px) 100vw, 525px"
+																data-image-size="full">
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="elementor-column elementor-col-50 elementor-top-column
+									elementor-element elementor-element-39632c0 elementor-invisible"
+									data-id="39632c0" data-element_type="column"
+									data-settings="{&quot;animation&quot;:&quot;fadeInRight&quot;}">
+									<div class="elementor-column-wrap elementor-element-populated">
+										<div class="elementor-widget-wrap elementor-motion-effects-parent">
+											<div class="elementor-element elementor-element-e462043
+												eael-dual-header-content-align-left elementor-widget
+												elementor-widget-eael-dual-color-header
+												elementor-motion-effects-parent" data-id="e462043"
+												data-element_type="widget"
+												data-settings="{&quot;motion_fx_motion_fx_scrolling&quot;:&quot;yes&quot;,&quot;motion_fx_translateY_effect&quot;:&quot;yes&quot;,&quot;motion_fx_translateY_speed&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:1,&quot;sizes&quot;:[]},&quot;motion_fx_translateY_affectedRange&quot;:{&quot;unit&quot;:&quot;%&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:{&quot;start&quot;:0,&quot;end&quot;:100}},&quot;motion_fx_devices&quot;:[&quot;desktop&quot;,&quot;tablet&quot;,&quot;mobile&quot;]}"
+												data-widget_type="eael-dual-color-header.default">
+												<div class="elementor-widget-container
+													elementor-motion-effects-element" style="--translateY:50px;
+													--e-transform-transition-duration:100ms; transform:
+													translateY(var(--translateY));">
+
+													<div class="eael-dual-header">
+														<h2 class="title"><span class="lead solid-color">SPACE </span>
+															<span>ADVENTURES</span></h2>
+														<span class="subtext"></span>
+													</div>
+
+
+
+
+												</div>
+											</div>
+											<div class="elementor-element elementor-element-82c2f8c
+												elementor-widget elementor-widget-heading
+												elementor-motion-effects-parent" data-id="82c2f8c"
+												data-element_type="widget"
+												data-settings="{&quot;motion_fx_motion_fx_scrolling&quot;:&quot;yes&quot;,&quot;motion_fx_translateY_effect&quot;:&quot;yes&quot;,&quot;motion_fx_translateY_speed&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:2,&quot;sizes&quot;:[]},&quot;motion_fx_translateY_affectedRange&quot;:{&quot;unit&quot;:&quot;%&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:{&quot;start&quot;:0,&quot;end&quot;:100}},&quot;motion_fx_devices&quot;:[&quot;desktop&quot;,&quot;tablet&quot;,&quot;mobile&quot;]}"
+												data-widget_type="heading.default">
+												<div class="elementor-widget-container
+													elementor-motion-effects-element" style="--translateY:100px;
+													--e-transform-transition-duration:100ms; transform:
+													translateY(var(--translateY));">
+													<h2 class="elementor-heading-title elementor-size-default">SURVIVE
+														FROM ALIEN SHIPS BY HIDING AND COLLECT ORBS</h2> </div>
+											</div>
+											<div class="elementor-element elementor-element-42a23fa
+												elementor-widget elementor-widget-text-editor
+												elementor-motion-effects-parent" data-id="42a23fa"
+												data-element_type="widget"
+												data-settings="{&quot;motion_fx_motion_fx_scrolling&quot;:&quot;yes&quot;,&quot;motion_fx_translateY_effect&quot;:&quot;yes&quot;,&quot;motion_fx_translateY_speed&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:1,&quot;sizes&quot;:[]},&quot;motion_fx_translateY_affectedRange&quot;:{&quot;unit&quot;:&quot;%&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:{&quot;start&quot;:0,&quot;end&quot;:100}},&quot;motion_fx_devices&quot;:[&quot;desktop&quot;,&quot;tablet&quot;,&quot;mobile&quot;]}"
+												data-widget_type="text-editor.default">
+												<div class="elementor-widget-container
+													elementor-motion-effects-element" style="--translateY:50px;
+													--e-transform-transition-duration:100ms; transform:
+													translateY(var(--translateY));">
+													<div class="elementor-text-editor elementor-clearfix">
+														The Aliens took over the planet and killed all the life forms,
+														only way of surviving is hiding from them. </div>
+												</div>
+											</div>
+											<div class="elementor-element elementor-element-da0cc96
+												elementor-widget elementor-widget-text-editor
+												elementor-motion-effects-parent" data-id="da0cc96"
+												data-element_type="widget"
+												data-settings="{&quot;motion_fx_motion_fx_scrolling&quot;:&quot;yes&quot;,&quot;motion_fx_translateY_effect&quot;:&quot;yes&quot;,&quot;motion_fx_translateY_speed&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:1,&quot;sizes&quot;:[]},&quot;motion_fx_translateY_affectedRange&quot;:{&quot;unit&quot;:&quot;%&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:{&quot;start&quot;:0,&quot;end&quot;:100}},&quot;motion_fx_devices&quot;:[&quot;desktop&quot;,&quot;tablet&quot;,&quot;mobile&quot;]}"
+												data-widget_type="text-editor.default">
+												<div class="elementor-widget-container
+													elementor-motion-effects-element" style="--translateY:50px;
+													--e-transform-transition-duration:100ms; transform:
+													translateY(var(--translateY));">
+													<div class="elementor-text-editor elementor-clearfix">
+														Thankfully the aliens are lazy and use machine to detect living
+														organisms, which cannot detect you if you are adjecent to a wall,
+														making you hidden in plain sight.<br> Your Task is to collect orbs
+														and come back to the starting position before you get caught by
+														the ship </div>
+												</div>
+											</div>
+											<section data-particle_enable="false"
+												data-particle-mobile-disabled="false" class="elementor-section
+												elementor-inner-section elementor-element elementor-element-0a5ee62
+												elementor-section-content-middle elementor-section-boxed
+												elementor-section-height-default elementor-section-height-default
+												elementor-motion-effects-element" data-id="0a5ee62"
+												data-element_type="section"
+												data-settings="{&quot;motion_fx_motion_fx_scrolling&quot;:&quot;yes&quot;,&quot;motion_fx_translateY_effect&quot;:&quot;yes&quot;,&quot;motion_fx_translateY_speed&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:1,&quot;sizes&quot;:[]},&quot;motion_fx_translateY_affectedRange&quot;:{&quot;unit&quot;:&quot;%&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:{&quot;start&quot;:0,&quot;end&quot;:100}},&quot;motion_fx_devices&quot;:[&quot;desktop&quot;,&quot;tablet&quot;,&quot;mobile&quot;]}"
+												style="--translateY:50px; --e-transform-transition-duration:100ms;
+												transform: translateY(var(--translateY));">
+												<div class="elementor-container elementor-column-gap-no">
+													<div class="elementor-row">
+														<div class="elementor-column elementor-col-33
+															elementor-inner-column elementor-element
+															elementor-element-8bd38a8" data-id="8bd38a8"
+															data-element_type="column">
+															<div class="elementor-column-wrap elementor-element-populated">
+																<div class="elementor-widget-wrap">
+																	<div class="elementor-element elementor-element-dec806b
+																		elementor-widget__width-initial
+																		elementor-widget-tablet__width-initial
+																		elementor-widget-mobile__width-initial
+																		elementor-aspect-ratio-169 elementor-widget
+																		elementor-widget-video" data-id="dec806b"
+																		data-element_type="widget"
+																		data-settings="{&quot;youtube_url&quot;:&quot;https:\/\/www.youtube.com\/watch?v=XHOmBV4js_E&quot;,&quot;show_image_overlay&quot;:&quot;yes&quot;,&quot;image_overlay&quot;:{&quot;url&quot;:&quot;https:\/\/static.live.templately.com\/2020\/09\/1dbf00a9-play-button.svg&quot;,&quot;id&quot;:18812},&quot;lightbox&quot;:&quot;yes&quot;,&quot;video_type&quot;:&quot;youtube&quot;,&quot;controls&quot;:&quot;yes&quot;,&quot;aspect_ratio&quot;:&quot;169&quot;}"
+																		data-widget_type="video.default">
+																		<div class="elementor-widget-container">
+																			<div class="elementor-wrapper elementor-open-lightbox">
+																				<!-- <div class="elementor-custom-embed-image-overlay"
+																					data-elementor-open-lightbox="yes"
+																					data-elementor-lightbox="{&quot;type&quot;:&quot;video&quot;,&quot;videoType&quot;:&quot;youtube&quot;,&quot;url&quot;:&quot;https:\/\/www.youtube.com\/embed\/XHOmBV4js_E?feature=oembed&amp;start&amp;end&amp;wmode=opaque&amp;loop=0&amp;controls=1&amp;mute=0&amp;rel=0&amp;modestbranding=0&quot;,&quot;modalOptions&quot;:{&quot;id&quot;:&quot;elementor-lightbox-dec806b&quot;,&quot;entranceAnimation&quot;:&quot;&quot;,&quot;entranceAnimation_tablet&quot;:&quot;&quot;,&quot;entranceAnimation_mobile&quot;:&quot;&quot;,&quot;videoAspectRatio&quot;:&quot;169&quot;}}"
+																					e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJ0eXBlIjoidmlkZW8iLCJ2aWRlb1R5cGUiOiJ5b3V0dWJlIiwidXJsIjoiaHR0cHM6XC9cL3d3dy55b3V0dWJlLmNvbVwvZW1iZWRcL1hIT21CVjRqc19FP2ZlYXR1cmU9b2VtYmVkJnN0YXJ0JmVuZCZ3bW9kZT1vcGFxdWUmbG9vcD0wJmNvbnRyb2xzPTEmbXV0ZT0wJnJlbD0wJm1vZGVzdGJyYW5kaW5nPTAiLCJtb2RhbE9wdGlvbnMiOnsiaWQiOiJlbGVtZW50b3ItbGlnaHRib3gtZGVjODA2YiIsImVudHJhbmNlQW5pbWF0aW9uIjoiIiwiZW50cmFuY2VBbmltYXRpb25fdGFibGV0IjoiIiwiZW50cmFuY2VBbmltYXRpb25fbW9iaWxlIjoiIiwidmlkZW9Bc3BlY3RSYXRpbyI6IjE2OSJ9fQ%3D%3D">
+																					<img decoding="async" width="1" height="1"
+																						src="Files/Images/1dbf00a9-play-button.svg"
+																						class="attachment-full size-full wp-stateless-item" alt=""
+																						loading="lazy" data-image-size="full"
+																						data-stateless-media-bucket="static.live.templately.com"
+																						data-stateless-media-name="2020/09/1dbf00a9-play-button.svg">
+																				</div> -->
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</section>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+					<section data-particle_enable="false" data-particle-mobile-disabled="false"
+						class="elementor-section elementor-top-section elementor-element
+						elementor-element-38b6275 elementor-section-boxed
+						elementor-section-height-default elementor-section-height-default"
+						data-id="38b6275" data-element_type="section"
+						data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+						<div class="elementor-container elementor-column-gap-no">
+							<div class="elementor-row">
+								<div class="elementor-column elementor-col-100 elementor-top-column
+									elementor-element elementor-element-e4f5975" data-id="e4f5975"
+									data-element_type="column">
+									<div class="elementor-column-wrap elementor-element-populated">
+										<div class="elementor-widget-wrap">
+											<div class="elementor-element elementor-element-bd9212b
+												elementor-invisible elementor-widget elementor-widget-heading
+												elementor-motion-effects-parent" data-id="bd9212b"
+												data-element_type="widget"
+												data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;,&quot;motion_fx_motion_fx_scrolling&quot;:&quot;yes&quot;,&quot;motion_fx_scale_effect&quot;:&quot;yes&quot;,&quot;motion_fx_scale_direction&quot;:&quot;in-out&quot;,&quot;motion_fx_scale_speed&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:1.5,&quot;sizes&quot;:[]},&quot;motion_fx_scale_range&quot;:{&quot;unit&quot;:&quot;%&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:{&quot;start&quot;:20,&quot;end&quot;:80}},&quot;motion_fx_devices&quot;:[&quot;desktop&quot;,&quot;tablet&quot;,&quot;mobile&quot;]}"
+												data-widget_type="heading.default">
+												<div class="elementor-widget-container
+													elementor-motion-effects-element" style="--scale:1.15;
+													--e-transform-transition-duration:100ms; transform:
+													scale(var(--scale));">
+													<h2 class="elementor-heading-title elementor-size-default">GAMEPLAY</h2>
+												</div>
+											</div>
+											<img src="Files/Images/GameGif.gif" style="border-radius: 10px;">
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+
+
+				</div>
+			</div>
+		</div>
+
+
+		<div data-elementor-type="footer" data-elementor-id="18886" class="elementor
+			elementor-18886 elementor-location-footer">
+			<div class="elementor-section-wrap">
+				<section data-particle_enable="false" data-particle-mobile-disabled="false"
+					class="elementor-section elementor-top-section elementor-element
+					elementor-element-eaf851b elementor-section-boxed
+					elementor-section-height-default elementor-section-height-default"
+					data-id="eaf851b" data-element_type="section" id="footer_section"
+					data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+					<div class="elementor-container elementor-column-gap-no">
+						<div class="elementor-row">
+							<div class="elementor-column elementor-col-100 elementor-top-column
+								elementor-element elementor-element-af3b27f" data-id="af3b27f"
+								data-element_type="column">
+								<div class="elementor-column-wrap elementor-element-populated">
+									<div class="elementor-widget-wrap">
+										<section data-particle_enable="false"
+											data-particle-mobile-disabled="false" class="elementor-section
+											elementor-inner-section elementor-element elementor-element-dc43633
+											elementor-section-content-middle elementor-section-boxed
+											elementor-section-height-default elementor-section-height-default
+											elementor-invisible" data-id="dc43633" data-element_type="section"
+											data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;animation&quot;:&quot;zoomIn&quot;}">
+											<div class="elementor-container elementor-column-gap-no">
+												<div class="elementor-row">
+													<div class="elementor-column elementor-col-50
+														elementor-inner-column elementor-element
+														elementor-element-34deba8" data-id="34deba8"
+														data-element_type="column">
+														<div class="elementor-column-wrap elementor-element-populated">
+															<div class="elementor-widget-wrap">
+																<div class="elementor-element elementor-element-72c4753
+																	elementor-widget elementor-widget-heading" data-id="72c4753"
+																	data-element_type="widget" data-widget_type="heading.default">
+																	<div class="elementor-widget-container">
+																		<h2 class="elementor-heading-title elementor-size-default">Please
+																			give a review</h2> </div>
+																</div>
+																<div class="elementor-element elementor-element-862b978
+																	elementor-widget elementor-widget-text-editor"
+																	data-id="862b978" data-element_type="widget"
+																	data-widget_type="text-editor.default">
+																	<div class="elementor-widget-container">
+																		<div class="elementor-text-editor elementor-clearfix">
+																			Hi, if you reached till here please give a feedback about the
+																			game or site, Thankyou
+																		</div>
+																	</div>
+																</div>
+																<div class="elementor-element elementor-element-5ffa715
+																	skew-button eael-mailchimp-message-text-default
+																	elementor-widget elementor-widget-eael-mailchimp"
+																	data-id="5ffa715" data-element_type="widget"
+																	data-widget_type="eael-mailchimp.default">
+																	<div class="elementor-widget-container">
+																		<div class="eael-mailchimp-wrap eael-mailchimp-inline"
+																			data-mailchimp-id="5ffa715"
+																			data-api-key="bea04a8ddf01c76863b64cea83882184-us19"
+																			data-list-id="" data-button-text="Subscribe"
+																			data-success-text="You have subscribed successfully!"
+																			data-loading-text="Submitting...">
+																			<form id="eael-mailchimp-form-5ffa715" onsubmit="sendEmail()" method="POST">
+																				<div class="eael-form-fields-wrapper
+																					eael-mailchimp-fields-wrapper eael-mailchimp-btn-inline">
+																					<div class="eael-field-group eael-mailchimp-email">
+																						<label for=""></label>
+																						<input type="email" name="eael_mailchimp_email"
+																							class="eael-mailchimp-input" placeholder="Email"
+																							required="required">
+																						<input type="text" name="eael_mailchimp_msg" id="eael_mailchimp_msg"
+																							class="eael-mailchimp-input" placeholder="Message"
+																							required="required">
+																					</div>
+
+
+																					<div class="eael-field-group eael-mailchimp-submit-btn">
+																						<button type="submit" id="eael-subscribe-5ffa715"
+																							class="eael-button eael-mailchimp-subscribe">
+																							<div class="eael-btn-loader button__loader"></div>
+																							<span>Send</span>
+																						</button>
+																					</div>
+																				</div>
+																				<div class="eael-mailchimp-message"></div>
+																			</form>
+																		</div>
+
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="elementor-column elementor-col-50
+														elementor-inner-column elementor-element
+														elementor-element-b92c1cc" data-id="b92c1cc"
+														data-element_type="column">
+														<div class="elementor-column-wrap elementor-element-populated">
+															<div class="elementor-widget-wrap">
+																<div class="elementor-element elementor-element-bf0b16b
+																	elementor-widget elementor-widget-image" data-id="bf0b16b"
+																	data-element_type="widget" data-widget_type="image.default">
+																	<div class="elementor-widget-container">
+																		<div class="elementor-image">
+																			<img width="1" height="1"
+																				src="Files/Images/56f533f4-subsctiption-vactor.svg"
+																				class="attachment-full size-full wp-stateless-item" alt=""
+																				loading="lazy" data-image-size="full"
+																				data-stateless-media-bucket="static.live.templately.com"
+																				data-stateless-media-name="2020/09/56f533f4-subsctiption-vactor.svg">
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</section>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+			</div>
+		</div>
+
+
+	<script>
+		function sendEmail() {
+			var msg = document.getElementById("eael_mailchimp_msg").value;
+			window.open('mailto:aviralsharma205@gmail.com?subject=About the Game&body='+msg);
+			}
+	</script>
+	<script type="text/template" id="tmpl-variation-template">
+</script>
+		<link rel="stylesheet" id="elementor-gallery-css"
+			href="Files/Styles/e-gallery.min.css" type="text/css" media="all">
+		<link rel="stylesheet" id="e-animations-css" href="Files/Styles/animations.min.css"
+			type="text/css" media="all">
+		<link rel="stylesheet" id="photoswipe-css" href="Files/Styles/photoswipe.min.css"
+			type="text/css" media="all">
+		<link rel="stylesheet" id="photoswipe-default-skin-css"
+			href="Files/Styles/default-skin.min.css" type="text/css" media="all">
+		<script type="text/javascript" id="eael-general-js-extra">
+/* <![CDATA[ */
+var localize = {"ajaxurl":"https:\/\/live.templately.com\/wp-admin\/admin-ajax.php","nonce":"2a36539ad9","i18n":{"added":"Added ","compare":"Compare","loading":"Loading..."},"page_permalink":"https:\/\/live.templately.com\/gamezone\/","cart_redirectition":"no","cart_page_url":"https:\/\/live.templately.com\/cart\/","el_breakpoints":{"mobile":{"label":"Mobile","value":767,"default_value":767,"direction":"max","is_enabled":true},"mobile_extra":{"label":"Mobile Extra","value":880,"default_value":880,"direction":"max","is_enabled":false},"tablet":{"label":"Tablet","value":1024,"default_value":1024,"direction":"max","is_enabled":true},"tablet_extra":{"label":"Tablet Extra","value":1200,"default_value":1200,"direction":"max","is_enabled":false},"laptop":{"label":"Laptop","value":1366,"default_value":1366,"direction":"max","is_enabled":false},"widescreen":{"label":"Widescreen","value":2400,"default_value":2400,"direction":"min","is_enabled":false}},"ParticleThemesData":{"default":"{\"particles\":{\"number\":{\"value\":160,\"density\":{\"enable\":true,\"value_area\":800}},\"color\":{\"value\":\"#ffffff\"},\"shape\":{\"type\":\"circle\",\"stroke\":{\"width\":0,\"color\":\"#000000\"},\"polygon\":{\"nb_sides\":5},\"image\":{\"src\":\"img\/github.svg\",\"width\":100,\"height\":100}},\"opacity\":{\"value\":0.5,\"random\":false,\"anim\":{\"enable\":false,\"speed\":1,\"opacity_min\":0.1,\"sync\":false}},\"size\":{\"value\":3,\"random\":true,\"anim\":{\"enable\":false,\"speed\":40,\"size_min\":0.1,\"sync\":false}},\"line_linked\":{\"enable\":true,\"distance\":150,\"color\":\"#ffffff\",\"opacity\":0.4,\"width\":1},\"move\":{\"enable\":true,\"speed\":6,\"direction\":\"none\",\"random\":false,\"straight\":false,\"out_mode\":\"out\",\"bounce\":false,\"attract\":{\"enable\":false,\"rotateX\":600,\"rotateY\":1200}}},\"interactivity\":{\"detect_on\":\"canvas\",\"events\":{\"onhover\":{\"enable\":true,\"mode\":\"repulse\"},\"onclick\":{\"enable\":true,\"mode\":\"push\"},\"resize\":true},\"modes\":{\"grab\":{\"distance\":400,\"line_linked\":{\"opacity\":1}},\"bubble\":{\"distance\":400,\"size\":40,\"duration\":2,\"opacity\":8,\"speed\":3},\"repulse\":{\"distance\":200,\"duration\":0.4},\"push\":{\"particles_nb\":4},\"remove\":{\"particles_nb\":2}}},\"retina_detect\":true}","nasa":"{\"particles\":{\"number\":{\"value\":250,\"density\":{\"enable\":true,\"value_area\":800}},\"color\":{\"value\":\"#ffffff\"},\"shape\":{\"type\":\"circle\",\"stroke\":{\"width\":0,\"color\":\"#000000\"},\"polygon\":{\"nb_sides\":5},\"image\":{\"src\":\"img\/github.svg\",\"width\":100,\"height\":100}},\"opacity\":{\"value\":1,\"random\":true,\"anim\":{\"enable\":true,\"speed\":1,\"opacity_min\":0,\"sync\":false}},\"size\":{\"value\":3,\"random\":true,\"anim\":{\"enable\":false,\"speed\":4,\"size_min\":0.3,\"sync\":false}},\"line_linked\":{\"enable\":false,\"distance\":150,\"color\":\"#ffffff\",\"opacity\":0.4,\"width\":1},\"move\":{\"enable\":true,\"speed\":1,\"direction\":\"none\",\"random\":true,\"straight\":false,\"out_mode\":\"out\",\"bounce\":false,\"attract\":{\"enable\":false,\"rotateX\":600,\"rotateY\":600}}},\"interactivity\":{\"detect_on\":\"canvas\",\"events\":{\"onhover\":{\"enable\":true,\"mode\":\"bubble\"},\"onclick\":{\"enable\":true,\"mode\":\"repulse\"},\"resize\":true},\"modes\":{\"grab\":{\"distance\":400,\"line_linked\":{\"opacity\":1}},\"bubble\":{\"distance\":250,\"size\":0,\"duration\":2,\"opacity\":0,\"speed\":3},\"repulse\":{\"distance\":400,\"duration\":0.4},\"push\":{\"particles_nb\":4},\"remove\":{\"particles_nb\":2}}},\"retina_detect\":true}","bubble":"{\"particles\":{\"number\":{\"value\":15,\"density\":{\"enable\":true,\"value_area\":800}},\"color\":{\"value\":\"#1b1e34\"},\"shape\":{\"type\":\"polygon\",\"stroke\":{\"width\":0,\"color\":\"#000\"},\"polygon\":{\"nb_sides\":6},\"image\":{\"src\":\"img\/github.svg\",\"width\":100,\"height\":100}},\"opacity\":{\"value\":0.3,\"random\":true,\"anim\":{\"enable\":false,\"speed\":1,\"opacity_min\":0.1,\"sync\":false}},\"size\":{\"value\":50,\"random\":false,\"anim\":{\"enable\":true,\"speed\":10,\"size_min\":40,\"sync\":false}},\"line_linked\":{\"enable\":false,\"distance\":200,\"color\":\"#ffffff\",\"opacity\":1,\"width\":2},\"move\":{\"enable\":true,\"speed\":8,\"direction\":\"none\",\"random\":false,\"straight\":false,\"out_mode\":\"out\",\"bounce\":false,\"attract\":{\"enable\":false,\"rotateX\":600,\"rotateY\":1200}}},\"interactivity\":{\"detect_on\":\"canvas\",\"events\":{\"onhover\":{\"enable\":false,\"mode\":\"grab\"},\"onclick\":{\"enable\":false,\"mode\":\"push\"},\"resize\":true},\"modes\":{\"grab\":{\"distance\":400,\"line_linked\":{\"opacity\":1}},\"bubble\":{\"distance\":400,\"size\":40,\"duration\":2,\"opacity\":8,\"speed\":3},\"repulse\":{\"distance\":200,\"duration\":0.4},\"push\":{\"particles_nb\":4},\"remove\":{\"particles_nb\":2}}},\"retina_detect\":true}","snow":"{\"particles\":{\"number\":{\"value\":450,\"density\":{\"enable\":true,\"value_area\":800}},\"color\":{\"value\":\"#fff\"},\"shape\":{\"type\":\"circle\",\"stroke\":{\"width\":0,\"color\":\"#000000\"},\"polygon\":{\"nb_sides\":5},\"image\":{\"src\":\"img\/github.svg\",\"width\":100,\"height\":100}},\"opacity\":{\"value\":0.5,\"random\":true,\"anim\":{\"enable\":false,\"speed\":1,\"opacity_min\":0.1,\"sync\":false}},\"size\":{\"value\":5,\"random\":true,\"anim\":{\"enable\":false,\"speed\":40,\"size_min\":0.1,\"sync\":false}},\"line_linked\":{\"enable\":false,\"distance\":500,\"color\":\"#ffffff\",\"opacity\":0.4,\"width\":2},\"move\":{\"enable\":true,\"speed\":6,\"direction\":\"bottom\",\"random\":false,\"straight\":false,\"out_mode\":\"out\",\"bounce\":false,\"attract\":{\"enable\":false,\"rotateX\":600,\"rotateY\":1200}}},\"interactivity\":{\"detect_on\":\"canvas\",\"events\":{\"onhover\":{\"enable\":true,\"mode\":\"bubble\"},\"onclick\":{\"enable\":true,\"mode\":\"repulse\"},\"resize\":true},\"modes\":{\"grab\":{\"distance\":400,\"line_linked\":{\"opacity\":0.5}},\"bubble\":{\"distance\":400,\"size\":4,\"duration\":0.3,\"opacity\":1,\"speed\":3},\"repulse\":{\"distance\":200,\"duration\":0.4},\"push\":{\"particles_nb\":4},\"remove\":{\"particles_nb\":2}}},\"retina_detect\":true}","nyan_cat":"{\"particles\":{\"number\":{\"value\":150,\"density\":{\"enable\":false,\"value_area\":800}},\"color\":{\"value\":\"#ffffff\"},\"shape\":{\"type\":\"star\",\"stroke\":{\"width\":0,\"color\":\"#000000\"},\"polygon\":{\"nb_sides\":5},\"image\":{\"src\":\"http:\/\/wiki.lexisnexis.com\/academic\/images\/f\/fb\/Itunes_podcast_icon_300.jpg\",\"width\":100,\"height\":100}},\"opacity\":{\"value\":0.5,\"random\":false,\"anim\":{\"enable\":false,\"speed\":1,\"opacity_min\":0.1,\"sync\":false}},\"size\":{\"value\":4,\"random\":true,\"anim\":{\"enable\":false,\"speed\":40,\"size_min\":0.1,\"sync\":false}},\"line_linked\":{\"enable\":false,\"distance\":150,\"color\":\"#ffffff\",\"opacity\":0.4,\"width\":1},\"move\":{\"enable\":true,\"speed\":14,\"direction\":\"left\",\"random\":false,\"straight\":true,\"out_mode\":\"out\",\"bounce\":false,\"attract\":{\"enable\":false,\"rotateX\":600,\"rotateY\":1200}}},\"interactivity\":{\"detect_on\":\"canvas\",\"events\":{\"onhover\":{\"enable\":false,\"mode\":\"grab\"},\"onclick\":{\"enable\":true,\"mode\":\"repulse\"},\"resize\":true},\"modes\":{\"grab\":{\"distance\":200,\"line_linked\":{\"opacity\":1}},\"bubble\":{\"distance\":400,\"size\":40,\"duration\":2,\"opacity\":8,\"speed\":3},\"repulse\":{\"distance\":200,\"duration\":0.4},\"push\":{\"particles_nb\":4},\"remove\":{\"particles_nb\":2}}},\"retina_detect\":true}"},"eael_translate_text":{"required_text":"is a required field","invalid_text":"Invalid","billing_text":"Billing","shipping_text":"Shipping"},"eael_login_nonce":"ec64c83e8b","eael_register_nonce":"27febd9964","eael_lostpassword_nonce":"c89a9fc4e2","eael_resetpassword_nonce":"f48badc2d5"};
+/* ]]> */
+</script>
+		<script type="text/javascript" src="Files/Scripts/general.min.js.download"
+			id="eael-general-js" defer=""></script>
+		<script data-minify="1" type="text/javascript"
+			src="Files/Scripts/eael-18883.js.download" id="eael-18883-js" defer=""></script>
+		<script data-minify="1" type="text/javascript"
+			src="Files/Scripts/eael-18886.js.download" id="eael-18886-js" defer=""></script>
+		<script data-minify="1" type="text/javascript" src="Files/Scripts/index.js.download"
+			id="swv-js" defer=""></script>
+		<script type="text/javascript" id="contact-form-7-js-extra">
+/* <![CDATA[ */
+var wpcf7 = {"api":{"root":"https:\/\/live.templately.com\/wp-json\/","namespace":"contact-form-7\/v1"},"cached":"1"};
+/* ]]> */
+</script>
+		<script data-minify="1" type="text/javascript"
+			src="Files/Scripts/index.js(1).download" id="contact-form-7-js" defer=""></script>
+		<script type="text/javascript" src="Files/Scripts/bootstrap.min.js.download"
+			id="crowdfundly-bootstrap-js-js" defer=""></script>
+		<script type="text/javascript" src="Files/Scripts/slick.min.js.download"
+			id="crowdfundly-slick-js-js" defer=""></script>
+		<script type="text/javascript" src="Files/Scripts/sharer.min.js.download"
+			id="crowdfundly-sharer-js-js" defer=""></script>
+		<script type="text/javascript" src="Files/Scripts/sweetalert.min.js.download"
+			id="crowdfundly-swal-js" defer=""></script>
+		<script type="text/javascript" src="Files/Scripts/select2.min.js.download"
+			id="crowdfundly-select2-js" defer=""></script>
+		<script type="text/javascript" src="Files/Scripts/saved_resource"
+			id="crowdfundly-stripe-js-js" defer=""></script>
+		<script data-minify="1" type="text/javascript"
+			src="Files/Scripts/checkout.js.download" id="crowdfundly-checkout-js-js" defer=""></script>
+		<script type="text/javascript" id="crowdfundly-public-js-js-extra">
+/* <![CDATA[ */
+var crowdfundlyPublicData = {"ajax_url":"https:\/\/live.templately.com\/wp-admin\/admin-ajax.php","nonce":"31d2361881","cf_api_url":"https:\/\/api.crowdfundly.com\/api\/v1\/","failed":"Failed","help_text":"Please try again","contribution_thanks":"Thanks, for your contribution","success":"Success","loading":"Loading...","activities":"Activities","load_more":"Load More","contribute_now":"Contribute Now"};
+/* ]]> */
+</script>
+		<script type="text/javascript" src="Files/Scripts/public.min.js.download"
+			id="crowdfundly-public-js-js" defer=""></script>
+		<script type="text/javascript" src="Files/Scripts/owl.carousel.min.js.download"
+			id="easyjobsowl-js" defer=""></script>
+		<script type="text/javascript" src="Files/Scripts/easyjobs-public.min.js.download"
+			id="easyjobs-js" defer=""></script>
+		<script type="text/javascript" src="Files/Scripts/jquery.blockUI.min.js.download"
+			id="jquery-blockui-js" defer=""></script>
+		<script type="text/javascript" id="wc-add-to-cart-js-extra">
+/* <![CDATA[ */
+var wc_add_to_cart_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/?wc-ajax=%%endpoint%%&elementor_page_id=18800","i18n_view_cart":"View cart","cart_url":"https:\/\/live.templately.com\/cart\/","is_cart":"","cart_redirect_after_add":"no"};
+/* ]]> */
+</script>
+		<script type="text/javascript" src="Files/Scripts/add-to-cart.min.js.download"
+			id="wc-add-to-cart-js" defer=""></script>
+		<script type="text/javascript" src="Files/Scripts/js.cookie.min.js.download"
+			id="js-cookie-js" defer=""></script>
+		<script type="text/javascript" id="woocommerce-js-extra">
+/* <![CDATA[ */
+var woocommerce_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/?wc-ajax=%%endpoint%%&elementor_page_id=18800"};
+/* ]]> */
+</script>
+		<script type="text/javascript" src="Files/Scripts/woocommerce.min.js.download"
+			id="woocommerce-js" defer=""></script>
+		<script type="text/javascript" id="wc-cart-fragments-js-extra">
+/* <![CDATA[ */
+var wc_cart_fragments_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/?wc-ajax=%%endpoint%%&elementor_page_id=18800","cart_hash_key":"wc_cart_hash_058406eaadfe64a54c2dd3986437aece","fragment_name":"wc_fragments_058406eaadfe64a54c2dd3986437aece","request_timeout":"5000"};
+/* ]]> */
+</script>
+		<script type="text/javascript" src="Files/Scripts/cart-fragments.min.js.download"
+			id="wc-cart-fragments-js" defer=""></script>
+		<script type="text/javascript" id="rocket-browser-checker-js-after">
+"use strict";var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||!1,descriptor.configurable=!0,"value"in descriptor&&(descriptor.writable=!0),Object.defineProperty(target,descriptor.key,descriptor)}}return function(Constructor,protoProps,staticProps){return protoProps&&defineProperties(Constructor.prototype,protoProps),staticProps&&defineProperties(Constructor,staticProps),Constructor}}();function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor))throw new TypeError("Cannot call a class as a function")}var RocketBrowserCompatibilityChecker=function(){function RocketBrowserCompatibilityChecker(options){_classCallCheck(this,RocketBrowserCompatibilityChecker),this.passiveSupported=!1,this._checkPassiveOption(this),this.options=!!this.passiveSupported&&options}return _createClass(RocketBrowserCompatibilityChecker,[{key:"_checkPassiveOption",value:function(self){try{var options={get passive(){return!(self.passiveSupported=!0)}};window.addEventListener("test",null,options),window.removeEventListener("test",null,options)}catch(err){self.passiveSupported=!1}}},{key:"initRequestIdleCallback",value:function(){!1 in window&&(window.requestIdleCallback=function(cb){var start=Date.now();return setTimeout(function(){cb({didTimeout:!1,timeRemaining:function(){return Math.max(0,50-(Date.now()-start))}})},1)}),!1 in window&&(window.cancelIdleCallback=function(id){return clearTimeout(id)})}},{key:"isDataSaverModeOn",value:function(){return"connection"in navigator&&!0===navigator.connection.saveData}},{key:"supportsLinkPrefetch",value:function(){var elem=document.createElement("link");return elem.relList&&elem.relList.supports&&elem.relList.supports("prefetch")&&window.IntersectionObserver&&"isIntersecting"in IntersectionObserverEntry.prototype}},{key:"isSlowConnection",value:function(){return"connection"in navigator&&"effectiveType"in navigator.connection&&("2g"===navigator.connection.effectiveType||"slow-2g"===navigator.connection.effectiveType)}}]),RocketBrowserCompatibilityChecker}();
+</script>
+		<script type="text/javascript" id="rocket-preload-links-js-extra">
+/* <![CDATA[ */
+var RocketPreloadLinksConfig = {"excludeUris":"\/(?:.+\/)?feed(?:\/(?:.+\/?)?)?$|\/(?:.+\/)?embed\/|\/checkout\/|\/cart\/|\/my-account\/|\/wc-api\/v(.*)|\/(index\\.php\/)?wp\\-json(\/.*|$)|\/refer\/|\/go\/|\/recommend\/|\/recommends\/","usesTrailingSlash":"1","imageExt":"jpg|jpeg|gif|png|tiff|bmp|webp|avif|pdf|doc|docx|xls|xlsx|php","fileExt":"jpg|jpeg|gif|png|tiff|bmp|webp|avif|pdf|doc|docx|xls|xlsx|php|html|htm","siteUrl":"https:\/\/live.templately.com","onHoverDelay":"100","rateThrottle":"3"};
+/* ]]> */
+</script>
+		<script type="text/javascript" id="rocket-preload-links-js-after">
+(function() {
+"use strict";var r="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e},e=function(){function i(e,t){for(var n=0;n<t.length;n++){var i=t[n];i.enumerable=i.enumerable||!1,i.configurable=!0,"value"in i&&(i.writable=!0),Object.defineProperty(e,i.key,i)}}return function(e,t,n){return t&&i(e.prototype,t),n&&i(e,n),e}}();function i(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")}var t=function(){function n(e,t){i(this,n),this.browser=e,this.config=t,this.options=this.browser.options,this.prefetched=new Set,this.eventTime=null,this.threshold=1111,this.numOnHover=0}return e(n,[{key:"init",value:function(){!this.browser.supportsLinkPrefetch()||this.browser.isDataSaverModeOn()||this.browser.isSlowConnection()||(this.regex={excludeUris:RegExp(this.config.excludeUris,"i"),images:RegExp(".("+this.config.imageExt+")$","i"),fileExt:RegExp(".("+this.config.fileExt+")$","i")},this._initListeners(this))}},{key:"_initListeners",value:function(e){-1<this.config.onHoverDelay&&document.addEventListener("mouseover",e.listener.bind(e),e.listenerOptions),document.addEventListener("mousedown",e.listener.bind(e),e.listenerOptions),document.addEventListener("touchstart",e.listener.bind(e),e.listenerOptions)}},{key:"listener",value:function(e){var t=e.target.closest("a"),n=this._prepareUrl(t);if(null!==n)switch(e.type){case"mousedown":case"touchstart":this._addPrefetchLink(n);break;case"mouseover":this._earlyPrefetch(t,n,"mouseout")}}},{key:"_earlyPrefetch",value:function(t,e,n){var i=this,r=setTimeout(function(){if(r=null,0===i.numOnHover)setTimeout(function(){return i.numOnHover=0},1e3);else if(i.numOnHover>i.config.rateThrottle)return;i.numOnHover++,i._addPrefetchLink(e)},this.config.onHoverDelay);t.addEventListener(n,function e(){t.removeEventListener(n,e,{passive:!0}),null!==r&&(clearTimeout(r),r=null)},{passive:!0})}},{key:"_addPrefetchLink",value:function(i){return this.prefetched.add(i.href),new Promise(function(e,t){var n=document.createElement("link");n.rel="prefetch",n.href=i.href,n.onload=e,n.onerror=t,document.head.appendChild(n)}).catch(function(){})}},{key:"_prepareUrl",value:function(e){if(null===e||"object"!==(void 0===e?"undefined":r(e))||!1 in e||-1===["http:","https:"].indexOf(e.protocol))return null;var t=e.href.substring(0,this.config.siteUrl.length),n=this._getPathname(e.href,t),i={original:e.href,protocol:e.protocol,origin:t,pathname:n,href:t+n};return this._isLinkOk(i)?i:null}},{key:"_getPathname",value:function(e,t){var n=t?e.substring(this.config.siteUrl.length):e;return n.startsWith("/")||(n="/"+n),this._shouldAddTrailingSlash(n)?n+"/":n}},{key:"_shouldAddTrailingSlash",value:function(e){return this.config.usesTrailingSlash&&!e.endsWith("/")&&!this.regex.fileExt.test(e)}},{key:"_isLinkOk",value:function(e){return null!==e&&"object"===(void 0===e?"undefined":r(e))&&(!this.prefetched.has(e.href)&&e.origin===this.config.siteUrl&&-1===e.href.indexOf("?")&&-1===e.href.indexOf("#")&&!this.regex.excludeUris.test(e.href)&&!this.regex.images.test(e.href))}}],[{key:"run",value:function(){"undefined"!=typeof RocketPreloadLinksConfig&&new n(new RocketBrowserCompatibilityChecker({capture:!0,passive:!0}),RocketPreloadLinksConfig).init()}}]),n}();t.run();
+}());
+</script>
+		<script type="text/javascript" id="flexia-navigation-js-extra">
+/* <![CDATA[ */
+var settings = {"ajax_url":"https:\/\/live.templately.com\/wp-admin\/admin-ajax.php","blog_layout":"flexia_blog_content_layout_grid","masonry_grid_cols":"3","post_meta_position":"meta-on-bottom","per_page":"10","offset":"10","excerpt_count":"30","posts_count":"691","magnific_popup":"","show_filter":"","show_load_more":"1","load_more_text":"Load More","loading_text":"Loading...","selected_cats":"","is_pro_active":"false","archive_layout":"flexia_blog_content_layout_grid","archive_per_page":"10","archive_masonry_grid_cols":"3","archive_post_meta_position":"met;a-on-bottom","archive_excerpt_count":"60","archive_magnific_popup":"","archive_show_load_more":"1","archive_load_more_text":"Load More","archive_loading_text":"Loading...","query_vars":"{\"page\":\"\",\"pagename\":\"gamezone\"}","archive_total_page":"0","archive_count":"2","archive_nonce":"29b74978ef"};
+/* ]]> */
+</script>
+		<script type="text/javascript" src="Files/Scripts/flexia-scripts.min.js.download"
+			id="flexia-navigation-js" defer=""></script>
+		<script data-minify="1" type="text/javascript"
+			src="Files/Scripts/eael-18800.js.download" id="eael-18800-js" defer=""></script>
+		<script type="text/javascript" src="Files/Scripts/e-gallery.min.js.download"
+			id="elementor-gallery-js" defer=""></script>
+		<script type="text/javascript" src="Files/Scripts/webpack-pro.runtime.min.js.download"
+			id="elementor-pro-webpack-runtime-js" defer=""></script>
+		<script type="text/javascript" src="Files/Scripts/webpack.runtime.min.js.download"
+			id="elementor-webpack-runtime-js" defer=""></script>
+		<script type="text/javascript" src="Files/Scripts/frontend-modules.min.js.download"
+			id="elementor-frontend-modules-js" defer=""></script>
+		<script type="text/javascript" src="Files/Scripts/regenerator-runtime.min.js.download"
+			id="regenerator-runtime-js" defer=""></script>
+		<script type="text/javascript" src="Files/Scripts/wp-polyfill.min.js.download"
+			id="wp-polyfill-js"></script>
+		<script type="text/javascript" src="Files/Scripts/hooks.min.js.download"
+			id="wp-hooks-js"></script>
+		<script type="text/javascript" src="Files/Scripts/i18n.min.js.download"
+			id="wp-i18n-js"></script>
+		<script type="text/javascript" id="wp-i18n-js-after">
+wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
+</script>
+		<script type="text/javascript" id="elementor-pro-frontend-js-before">
+var ElementorProFrontendConfig = {"ajaxurl":"https:\/\/live.templately.com\/wp-admin\/admin-ajax.php","nonce":"c6fec23dc3","urls":{"assets":"https:\/\/live.templately.com\/wp-content\/plugins\/elementor-pro\/assets\/","rest":"https:\/\/live.templately.com\/wp-json\/"},"shareButtonsNetworks":{"facebook":{"title":"Facebook","has_counter":true},"twitter":{"title":"Twitter"},"linkedin":{"title":"LinkedIn","has_counter":true},"pinterest":{"title":"Pinterest","has_counter":true},"reddit":{"title":"Reddit","has_counter":true},"vk":{"title":"VK","has_counter":true},"odnoklassniki":{"title":"OK","has_counter":true},"tumblr":{"title":"Tumblr"},"digg":{"title":"Digg"},"skype":{"title":"Skype"},"stumbleupon":{"title":"StumbleUpon","has_counter":true},"mix":{"title":"Mix"},"telegram":{"title":"Telegram"},"pocket":{"title":"Pocket","has_counter":true},"xing":{"title":"XING","has_counter":true},"whatsapp":{"title":"WhatsApp"},"email":{"title":"Email"},"print":{"title":"Print"}},
+"woocommerce":{"menu_cart":{"cart_page_url":"https:\/\/live.templately.com\/cart\/","checkout_page_url":"https:\/\/live.templately.com\/checkout\/","fragments_nonce":"c5649cfe10"}},
+"facebook_sdk":{"lang":"en_US","app_id":""},"lottie":{"defaultAnimationUrl":"https:\/\/live.templately.com\/wp-content\/plugins\/elementor-pro\/modules\/lottie\/assets\/animations\/default.json"}};
+</script>
+		<script type="text/javascript" src="Files/Scripts/frontend.min.js.download"
+			id="elementor-pro-frontend-js" defer=""></script>
+		<script type="text/javascript" src="Files/Scripts/waypoints.min.js.download"
+			id="elementor-waypoints-js" defer=""></script>
+		<script type="text/javascript" src="Files/Scripts/core.min.js.download"
+			id="jquery-ui-core-js" defer=""></script>
+		<script type="text/javascript" src="Files/Scripts/swiper.min.js.download"
+			id="swiper-js" defer=""></script>
+		<script type="text/javascript" src="Files/Scripts/share-link.min.js.download"
+			id="share-link-js" defer=""></script>
+		<script type="text/javascript" src="Files/Scripts/dialog.min.js.download"
+			id="elementor-dialog-js" defer=""></script>
+		<script type="text/javascript" id="elementor-frontend-js-before">
+var elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false,"isScriptDebug":false},"i18n":{"shareOnFacebook":"Share on Facebook","shareOnTwitter":"Share on Twitter","pinIt":"Pin it","download":"Download","downloadImage":"Download image","fullscreen":"Fullscreen","zoom":"Zoom","share":"Share","playVideo":"Play Video","previous":"Previous","next":"Next","close":"Close"},"is_rtl":false,"breakpoints":{"xs":0,"sm":480,"md":768,"lg":1025,"xl":1440,"xxl":1600},"responsive":{"breakpoints":{"mobile":{"label":"Mobile","value":767,"default_value":767,"direction":"max","is_enabled":true},"mobile_extra":{"label":"Mobile Extra","value":880,"default_value":880,"direction":"max","is_enabled":false},"tablet":{"label":"Tablet","value":1024,"default_value":1024,"direction":"max","is_enabled":true},"tablet_extra":{"label":"Tablet Extra","value":1200,"default_value":1200,"direction":"max","is_enabled":false},"laptop":{"label":"Laptop","value":1366,"default_value":1366,"direction":"max","is_enabled":false},"widescreen":{"label":"Widescreen","value":2400,"default_value":2400,"direction":"min","is_enabled":false}}},
+"version":"3.8.1","is_static":false,"experimentalFeatures":{"e_import_export":true,"e_hidden_wordpress_widgets":true,"theme_builder_v2":true,"landing-pages":true,"elements-color-picker":true,"favorite-widgets":true,"admin-top-bar":true,"page-transitions":true,"notes":true,"form-submissions":true,"e_scroll_snap":true},"urls":{"assets":"https:\/\/live.templately.com\/wp-content\/plugins\/elementor\/assets\/"},"settings":{"page":[],"editorPreferences":[]},"kit":{"active_breakpoints":["viewport_mobile","viewport_tablet"],"global_image_lightbox":"yes","lightbox_enable_counter":"yes","lightbox_enable_fullscreen":"yes","lightbox_enable_zoom":"yes","lightbox_enable_share":"yes","lightbox_title_src":"title","lightbox_description_src":"description","woocommerce_notices_elements":[]},"post":{"id":18800,"title":"GameZone%20%E2%80%93%20Templately%20Live","excerpt":"","featuredImage":false}};
+</script>
+		<script type="text/javascript" src="Files/Scripts/frontend.min.js(1).download"
+			id="elementor-frontend-js" defer=""></script>
+		<script type="text/javascript"
+			src="Files/Scripts/preloaded-elements-handlers.min.js.download"
+			id="pro-preloaded-elements-handlers-js" defer=""></script>
+		<script type="text/javascript" src="Files/Scripts/preloaded-modules.min.js.download"
+			id="preloaded-modules-js" defer=""></script>
+		<script type="text/javascript" src="Files/Scripts/jquery.sticky.min.js.download"
+			id="e-sticky-js" defer=""></script>
+		<script type="text/javascript" src="Files/Scripts/jquery.zoom.min.js.download"
+			id="zoom-js" defer=""></script>
+		<script type="text/javascript" src="Files/Scripts/jquery.flexslider.min.js.download"
+			id="flexslider-js" defer=""></script>
+		<script type="text/javascript" src="Files/Scripts/photoswipe.min.js.download"
+			id="photoswipe-js" defer=""></script>
+		<script type="text/javascript"
+			src="Files/Scripts/photoswipe-ui-default.min.js.download"
+			id="photoswipe-ui-default-js" defer=""></script>
+		<script type="text/javascript" src="Files/Scripts/underscore.min.js.download"
+			id="underscore-js" defer=""></script>
+		<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+		<script type="text/javascript" id="wp-util-js-extra">
+			
+/* <![CDATA[ */
+var _wpUtilSettings = {"ajax":{"url":"\/wp-admin\/admin-ajax.php"}};
+/* ]]> */
+</script>
+		<script type="text/javascript" src="Files/Scripts/wp-util.min.js.download"
+			id="wp-util-js" defer=""></script>
+	</div>
+</body>
+</html>
